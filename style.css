@@ -412,7 +412,7 @@ h6 {
 }  
 
 .project1::after {
-    content: "Toothbrash design";
+    content: "Toothbrush redesigned";
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
@@ -468,7 +468,7 @@ h6 {
 }
 
 .project2::after {
-    content: "Recycle sorter";
+    content: "Recycling sorter";
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
@@ -502,7 +502,7 @@ h6 {
 }
 
 .project3::after {
-    content: "Mopdular kettle";
+    content: "Sustainable kettle";
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
@@ -532,7 +532,7 @@ h6 {
 }
 
 .project4::after {
-    content: "departure.";
+    content: "Mini arcade box";
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
