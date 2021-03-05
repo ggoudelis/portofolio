@@ -409,7 +409,7 @@ h6 {
 .project1 {
     background: url(images/project1.jpg) no-repeat 50% 50%;
     height: 600px;
-    width: 10000px;
+    
     
     background-size: cover;
     
@@ -535,7 +535,7 @@ h6 {
 }
 
 .project4 {
-    background: url(images/pro4.gif) no-repeat 50% 50%;
+    background: url(images/project2.jpg) no-repeat 50% 50%;
     height: 600px;
     background-size: cover;
 }
