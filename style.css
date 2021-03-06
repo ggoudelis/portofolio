@@ -468,7 +468,7 @@ h6 {
 
 
 .project2 {
-    background: url(images/project2.jpg) no-repeat 50% 50%;
+    background: url(images/second.jpg) no-repeat 50% 50%;
     height: 600px;
 
     background-size: cover;
@@ -504,7 +504,7 @@ h6 {
 
 
 .project3 {
-    background: url(images/project3.jpg) no-repeat 50% 50%;
+    background: url(images/thrird.jpg) no-repeat 50% 50%;
     height: 600px;
     background-size: cover;
 }
