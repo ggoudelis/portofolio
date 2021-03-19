@@ -393,6 +393,58 @@ h6 {
 }
 
 
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* color: #323232;
+    text-transform: uppercase;
+    font-size: 28px; */
+}
+
+
+
+
+button {
+    display: block;
+    padding: 24px 48px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: rgb(255, 255, 255);
+    border: 4px sold #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    /* cursor: crosshair; */
+    transition: 0.8s ease-out
+}
+
+.myBtn:hover {
+    color: #101010;
+    /* cursor: crosshair; */
+}
+
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+    top: 0;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -405,6 +457,7 @@ h6 {
     transition: .5s ease;
     background: rgba(97, 89, 83, 0.9);
 }
+
 
 .project1 {
     background: url(images/project1.jpg) no-repeat 50% 50%;
