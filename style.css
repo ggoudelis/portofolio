@@ -39,7 +39,7 @@ html, body {
 }
 
 .anim-typewriter {
-    animation: typewriter 4s steps(40) 1s 1 normal both,
+    animation: typewriter 3.7s steps(40) 0.5s 1 normal both,
     blinkTextCussor 500ms steps(40) infinite normal;
 }
 
@@ -88,7 +88,7 @@ nav #brand {
     float: left;
     display: block;
     margin-left: 82px;
-    line-height: 80px;
+    line-height: 70px; /* fix logo height */
     font-weight: bold;
 }
 
@@ -428,44 +428,11 @@ h6 {
     right: 0;
     bottom: 0;
 }
-/* 
-.project1:hover {
-    transform: translateY(15px);
-
-}
-
-.project1:hover:before {
-    opacity:1; 
-} */
-
 
 .project1:hover .overlay {
     opacity: 0.4;
     transform: translateY(0);
 }
-
-
-
-/* 
-.project2:hover {
-    transform: translateY(15px);
-
-}
-
-.project2:hover:before {
-    opacity:1; 
-} */
-
-
-
-/* .project1:hover {
-    background: url(images/project1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    filter: grayscale(100%);
-} */
-
-
-
 
 .project2 {
     background: url(images/second.jpg) no-repeat 50% 50%;
@@ -494,15 +461,6 @@ h6 {
 
 }
 
-/* .project2:hover {
-    background: url(images/project2.jpg) no-repeat 60% 60%;
-    background-size: cover;
-    filter: grayscale(100%);
-} */
-
-
-
-
 .project3 {
     background: url(images/thrird.jpg) no-repeat 50% 50%;
     height: 600px;
@@ -521,13 +479,6 @@ h6 {
     right: 0;
     bottom: 0;
 }
-
-
-/* .project3:hover {
-    background: url(images/project3.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    filter: grayscale(100%);
-} */
 
 .project3:hover .overlay {
     opacity: 0.4;
@@ -558,13 +509,6 @@ h6 {
 
 }
 
-/* .containerr {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%)
-} */
-
 .cool-link::after {
     content: '';
     display: block;
@@ -579,13 +523,6 @@ h6 {
     transition: width .3s;
 }
 
-
-
-/* .project4:hover {
-    background: url(images/project1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    filter: grayscale(100%);
-} */
 
 @media(max-width: 768px) {
     .project {
