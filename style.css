@@ -39,7 +39,7 @@ html, body {
 }
 
 .anim-typewriter {
-    animation: typewriter 3.7s steps(40) 0.5s 1 normal both,
+    animation: typewriter 3.2s steps(40) 0.5s 1 normal both,
     blinkTextCussor 500ms steps(40) infinite normal;
 }
 
@@ -90,6 +90,10 @@ nav #brand {
     margin-left: 82px;
     line-height: 70px; /* fix logo height */
     font-weight: bold;
+}
+
+#photo_about{
+    line-height: 110px;
 }
 
 nav #brand a {
@@ -446,6 +450,25 @@ button {
     transition: .5s ease;
     background: rgba(97, 89, 83, 0.9);
 }
+
+.skills-title {
+    font-size: 20px;
+    color: #eb4f1a;
+}
+
+.skills {
+    font-size: 13px;
+    color: white;
+}
+
+.download_btn {
+    padding: 12px 30px;
+}
+
+.download_btn:hover {
+    color: #eb4f1a;
+    border-color: #eb4f1a;
+  }
 
 
 .project1 {
