@@ -517,7 +517,7 @@ button {
 }
 
 .project2 {
-    background: url(images/second.jpg) no-repeat 50% 50%;
+    background: url(images/second.jpg)  no-repeat 50% 50%;
     height: 600px;
 
     background-size: cover;
