@@ -807,12 +807,3 @@ button {
 
 
 
-  /*scroll bar style*/
-::-webkit-scrollbar {
-	height: 118px;
-    width: 117px;
-}
-::-webkit-scrollbar-thumb {
-	background: linear-gradient(to right ,transparent, #31292c);
-	border-radius: 511px;
-}
