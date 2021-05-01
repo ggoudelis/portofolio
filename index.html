@@ -34,6 +34,8 @@
 
             <!--------------- navbar starts here --------------->
             <nav>
+                  <div class="progress_bar" id="Bar"></div>
+
                   <span id="brand">
                         <a href="index.html"><img src="images/ipo.jpg" width="55" height="40"></a>
                   </span>
@@ -211,8 +213,20 @@
       
       <script type="text/javascript">
 
-    
+      // Function execute When the user scrolls the page
+      $(document).ready(function(){
+            $(this).scrollTop(0);
+      });
 
+      // Function execute When the user scrolls the page
+      window.onscroll = () =>{
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("Bar").style.width = scrolled + "%";
+      }
+
+    
 
 
       // navigation starts here

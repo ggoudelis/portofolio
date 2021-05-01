@@ -74,7 +74,22 @@ html, body {
 
 /*--------------- navigation --------------- */
 
+.progress_bar {
+    position: fixed;
+    top: 0;
+    left: 5;
+    height:10px;
+    background: linear-gradient(to right, #cc33ff 10%, #eb4f1a 100%);
+    width: 0%;
+    z-index: 100;
+  }
 
+
+a:hover {
+    color:#ffffff; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
 
 nav {
     width: 100%;
@@ -100,6 +115,7 @@ nav #brand a {
     color: #fff;
     transition: all 0.3s ease-out;
 }
+
 
 nav #brand a:hover {
     text-decoration: none;
@@ -452,6 +468,7 @@ button {
 }
 
 .skills-title {
+    margin-top: 10px;
     font-size: 20px;
     color: #eb4f1a;
 }
@@ -691,6 +708,29 @@ button {
     display: inline-block;
 }
 
+/* footer link color*/
+
+#media a {
+    color: #fff;
+
+}
+
+.myimage1 {
+    display: block;
+    margin-left: 60px;
+}
+
+.myimage2 {
+    display: block;
+    margin-left: 30px;
+}
+
+.myimage3 {
+        display: block;
+        margin-left: 70px;
+}
+
+
 @media(max-width: 768px) {
     .collab, #personal, #media, #address {
           text-align: center;
@@ -762,4 +802,17 @@ button {
 
 .next p {
     text-align: right;
+}
+
+
+
+
+  /*scroll bar style*/
+::-webkit-scrollbar {
+	height: 118px;
+    width: 117px;
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(to right ,transparent, #31292c);
+	border-radius: 511px;
 }

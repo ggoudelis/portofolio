@@ -31,10 +31,12 @@
 
 </head>
 <body>
-
-
             <!--------------- navbar starts here --------------->
             <nav>
+
+                  <div class="progress_bar" id="Bar"></div>
+
+            
                   <span id="brand">
                         <a href="index.html"><img src="images/ipo.jpg" width="55" height="40"></a>
                   </span>
@@ -107,24 +109,24 @@
                   
                         <div class="row">
                               <div class="col-lg-4">
-                                    <span id="photo_about">
-                                          <img src="images/gear-edited-grey-1.png" class="skills-title wow fadeInUp" data-wow-delay="0.1s" width="75" height="80">
-                                    </span>      
+                                    <div id="photo_about">
+                                          <img src="images/gear-edited-grey-1.png" class="skills-title wow fadeInUp myimage1" data-wow-delay="0.1s" width="75" height="80">
+                                    </div>      
                                     <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">Problem Solving</p>
                                     <p class="skills wow fadeInUp" data-wow-delay="0.2s">Assistance in oercoming difficult obtacles in projects with methodical approach to find solutions.</p>
                                     
                               </div>
                               <div class="col-lg-4">
-                                    <span id="photo_about">
-                                          <img src="images/cube-edited-grey-1-small.png" class="skills-title wow fadeInUp" data-wow-delay="0.1s" width="95" height="80">
-                                    </span>      
+                                    <div id="photo_about">
+                                          <img src="images/cube-edited-grey-1-small.png" class="skills-title wow fadeInUp myimage2" data-wow-delay="0.1s" width="95" height="80">
+                                    </div>      
                                     <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">CAD modeling</p>
                                     <p class="skills wow fadeInUp" data-wow-delay="0.2s">Computer aided 3-dimensional design, redering and performance simulations.</p>
                               </div>
                               <div class="col-lg-4">
-                                    <span id="photo_about">
-                                          <img src="images/screwdriver-edited-grey-1.png" class="skills-title wow fadeInUp" data-wow-delay="0.1s" width="70" height="75">
-                                    </span>
+                                    <div id="photo_about">
+                                          <img src="images/screwdriver-edited-grey-1.png" class="skills-title wow fadeInUp myimage3" data-wow-delay="0.1s" width="70" height="75">
+                                    </div>
                                     <p  class="skills-title wow fadeInUp" data-wow-delay="0.2s">Rapid Prototyping</p>
                                     <p class="skills wow fadeInUp" data-wow-delay="0.2s">Contruction of functional prototype for showcase or critical evaluation of design.</p>
                               </div>
@@ -145,6 +147,7 @@
             <!--------------- hero section ends here --------------->
 
             <div class="whitespace"></div>
+
 
             <!--------------- footer starts here --------------->
             <div class="footer">
@@ -208,6 +211,18 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
       <script type="text/javascript">
+      // Function execute When the user scrolls the page
+      $(document).ready(function(){
+            $(this).scrollTop(0);
+      });
+
+      // Function execute When the user scrolls the page
+      window.onscroll = () =>{
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("Bar").style.width = scrolled + "%";
+      }
 
       // navigation starts here
       $("#toggle").click(function() {
