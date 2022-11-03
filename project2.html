@@ -180,20 +180,15 @@
             </div>
           </div>
         </div>
-        <ul>
-          <p style="padding-top: 2%; color: #000">
-            The aim of this project was to design a plastic waste sorting
-            machine. The plastic waste problem is evidently prominent and
-            immensely complex to solve, as a result in this project it was
-            chosen to address one of its many constituents. More specifically,
-            the disposal of coffee cups and plastic bottles “on the go”, in
-            office spaces and coffee shops.
-            <br /><br />
-            This was a group project with 4 additional members and my personal
-            contribution involved everything related to design, modelling and
-            analysis, while also arranging the manufacturing plan.
-          </p>
-        </ul>
+        <div id="show">
+          <div class="solo-asset-area">
+            <div class=" asset_6 wow fadeInUp"></div>
+          </div>
+          <div class="solo-asset-area">
+            <div class=" asset_7 wow fadeInUp"></div>
+          </div>
+          <br />
+        </div>
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
@@ -358,6 +353,9 @@
         document.getElementById("Bar").style.width = scrolled + "%";
       };
 
+      var myElement = document.getElementById("#show");
+      
+
       let parent = document.querySelectorAll("[data-collapse");
       parent.forEach((element) => {
         let clickTarget = element.querySelector("*");
@@ -377,6 +375,8 @@
           },
           "open"
         );
+        
+
         tl.staggerFrom(
           collapseElementChildren,
           1,

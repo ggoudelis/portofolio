@@ -15,6 +15,8 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="shortcut icon" href="images/logo_g.png" /> 
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +46,7 @@
       <!--------------- navbar starts here --------------->
       <nav>
         <!--------------- social media --------------->
-        <div class="sidebar">
+        <!-- <div class="sidebar">
           <div class="social facebook">
             <a href=" https://www.facebook.com " target="_blank">
               <p>Like on Facebook <i class="fa fa-facebook "></i> </p>
@@ -60,7 +62,27 @@
               <p>Follow on Twitter<i class="fa fa-twitter"></i> </p>
             </a>
           </div>
-      </div>
+      </div> -->
+
+      <div class="mf-social-side-list wow fadeInUp" data-wow-delay="0.6s">
+        <ul>
+        <li>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+        </li>
+        <li>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+        <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        </ul>
+        </div>
 
         <div class="progress_bar" id="Bar"></div>
 
@@ -119,6 +141,7 @@
       <!--------------- hero section ends here --------------->
 
       <!--------------- projects section starts here --------------->
+      
       <div class="container-fluid">
         <!-- <br /> -->
 
@@ -153,7 +176,34 @@
         <div class="whitespace"></div>
         <!-- <div class="whitespace"></div> -->
 
-        <div class="row">
+        <div class="container-fluid">
+          
+          <div class="container">
+            <div class="img-area">
+                <div 
+                class="single-img project project3 wow fadeInUp"
+                onclick="location.href='project3.html'"
+                >
+                </div>
+                <div class="last-item project project2 wow fadeInUp"></div>
+                <!-- <div class="project project1 wow fadeInUp"></div>
+                <div class="last-item project project1 wow fadeInUp"></div> -->
+            </div>
+          </div>
+          <div class="whitespace"></div>
+          <div class="container">
+            <div class="img-area">
+                <div 
+                class="single-img project project1 wow fadeInUp"
+                onclick="location.href='project3.html'"
+                >
+                </div>
+                <div class="last-item project project1 wow fadeInUp"></div>
+            </div>
+          </div>
+      </div>
+
+        <!-- <div class="row">
           <div class="col-md-6"></div>
 
           <div
@@ -170,11 +220,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="whitespace"></div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-1"></div>
           <div
             class="col-md-5 project project2 wow fadeInUp"
@@ -192,9 +242,9 @@
           </div>
 
           <div class="col-lg-6"></div>
-        </div>
+        </div> -->
 
-        <div class="whitespace"></div>
+        <!-- <div class="whitespace"></div>
 
         <div class="row">
          <div class="col-md-6"></div>
@@ -215,62 +265,66 @@
           </div>
 
           <div class="col-lg-1"></div>
-        </div>
+        </div> -->
 
         <div class="whitespace"></div>
 
-        <div class="row">
-          <div class="col-md-1"></div>
-
-          <div
-            class="col-md-5 project project4 wow fadeInUp"
-            onclick="location.href='project4.html'"
-          >
-            <div class="overlay">
-              <div class="content">
-                <button class="myBtn">EXPLORE</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6"></div>
-        </div>
-
-        <div class="whitespace"></div>
       </div>
       <!--------------- projects section ends here --------------->
 <div class="container">
-                  
-                        <div class="row">
-                              <div class="col-lg-4">
-                                    <div id="photo_about">
-                                          <img src="images/gear-edited-grey-1.png" class="skills-title wow fadeInUp myimage1" data-wow-delay="0.1s" width="75" height="80">
-                                    </div>      
-                                    <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">Problem Solving</p>
-                                    <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Assistance in oercoming difficult obtacles in projects with methodical approach to find solutions.</p>
-                                    
-                              </div>
-                              <div class="col-lg-4">
-                                    <div id="photo_about">
-                                          <img src="images/cube-edited-grey-1-small.png" class="skills-title wow fadeInUp myimage2" data-wow-delay="0.1s" width="95" height="80">
-                                    </div>      
-                                    <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">CAD modeling</p>
-                                    <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Computer aided 3-dimensional design, redering and performance simulations.</p>
-                              </div>
-                              <div class="col-lg-4">
-                                    <div id="photo_about">
-                                          <img src="images/screwdriver-edited-grey-1.png" class="skills-title wow fadeInUp myimage3" data-wow-delay="0.1s" width="70" height="75">
-                                    </div>
-                                    <p  class="skills-title wow fadeInUp" data-wow-delay="0.2s">Rapid Prototyping</p>
-                                    <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Contruction of functional prototype for showcase or critical evaluation of design.</p>
-                              </div>
-                        </div>
-            </div>
+  <div class="containerr">
+    <p style="color: #000">
+      <h6 style="color: #000; font-size: 35px;">How Can I Help?</h6>
+    </p>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-lg-3"></div>
+
+    <div class="col-lg-4">
+      <div id="photo_about">
+        <img src="images/services/VIrtual_Modelling.svg" class="skills-title wow fadeInUp myimage1" data-wow-delay="0.1s" width="110" height="110">
+      </div>      
+      <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">Virtual Modeling</p>
+      <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Computer aided 3-dimensional<br/>design, rendering and <br/> performance simulations.</p>
+    </div>
+
+    <div class="col-lg-4">
+      <div id="photo_about">
+        <img src="images/services/Problem_Solving.svg" class="skills-title wow fadeInUp myimage2" data-wow-delay="0.1s" width="110" height="110">
+      </div>      
+      <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">Problem Solving</p>
+      <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Assistance in oercoming <br/> obstacles in projects <br/>with methodical approach.</p>
+    </div>
+
+    <div class="col-lg-2"></div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-lg-3"></div>
+
+    <div class="col-lg-4">
+      <div id="photo_about">
+        <img src="images/services/Rapid_Prototyping.svg" class="skills-title wow fadeInUp myimage1" data-wow-delay="0.1s" width="90" height="110">
+      </div>      
+      <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">Rapid Prototyping</p>
+      <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Construction of functional<br/> prototype for showcasing or <br/> critical evaluation of design.</p>
+    </div>
+
+    <div class="col-lg-4">
+      <div id="photo_about">
+        <img src="images/services/Creative_direction.svg" class="skills-title wow fadeInUp myimage2" data-wow-delay="0.1s" width="110" height="110">
+      </div>      
+      <p class="skills-title wow fadeInUp" data-wow-delay="0.2s">Creative Direction</p>
+      <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Support and input for the <br/> creative process of concept <br/>generation.</p>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+  </div>
+      <br /> <br /><br />
       <!--------------- footer starts here --------------->
       <div class="footer">
         <div class="container">
-          <br /><br />
-
           <div class="collab">
             <div class="row">
               <div class="col-lg-12">
@@ -281,13 +335,11 @@
             </div>
           </div>
 
-          <br />
-
           <div class="hr">
             <div class="row"></div>
           </div>
 
-          <br /><br />
+          <br />
 
           <div class="info">
             <div class="row">
@@ -304,56 +356,12 @@
               </div>
 
               <div class="col-lg-4" id="media">
-                <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                <ul>
-                  <li
-                    id="fb"
-                    class="wow fadeInUp footer-icons"
-                    data-wow-delay="0.4s"
-                  >
-                    <a
-                      style="color: #000"
-                      href="https://facebook.com/george.goudelis.9/"
-                      target="_blank"
-                      rel="noopener"
-                      >fb</a
-                    >
-                  </li>
-                  <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
-                    <a
-                      style="color: #000"
-                      href="https://instagram.com/ggoudelis/"
-                      target="_blank"
-                      rel="noopener"
-                      >ig</a
-                    >
-                  </li>
-                  <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">
-                    <a
-                      style="color: #000"
-                      href="https://linkedin.com/in/georgios-goudelis-bb4518107/"
-                      target="_blank"
-                      rel="noopener"
-                      >in</a
-                    >
-                  </li>
-                  <li id="yt" class="wow fadeInUp" data-wow-delay="1s">
-                    <a
-                      style="color: #000"
-                      href="https://angel.co/u/georgios-goudelis/"
-                      target="_blank"
-                      rel="noopener"
-                      >al</a
-                    >
-                  </li>
-                </ul>
 
                 <br /><br />
               </div>
 
               <div class="col-lg-4" id="address">
-                <p class="wow fadeInUp footer" data-wow-delay="0s">say hello</p>
+                <p class="wow fadeInUp footer" data-wow-delay="0s">contact me</p>
                 <h4
                   style="color: #000"
                   class="wow fadeInUp"
@@ -361,21 +369,26 @@
                 >
                   ggoudelis97@gmail.com
                 </h4>
-                <br /><br />
               </div>
             </div>
+            <div class="copyright wow fadeInUp">
+              <span style="color: grey; font-size: 14px;">Copyrights @ 2022 Georgios Goudelis</span>
+            </div>
+             <br/>
           </div>
         </div>
       </div>
       <!--------------- footer ends here --------------->
+      
 
-      <br /><br /><br /><br />
+      <!-- <br /><br /><br /><br /> -->
     </div>
 
     <!-- greensock cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script type="text/javascript">
+      $('html, body').animate({ scrollTop: 0 }, 'medium');
       // Function execute When the user scrolls the page
       $(document).ready(function () {
         $(this).scrollTop(0);
@@ -414,7 +427,7 @@
       // nav animation
 
       TweenMax.from("#brand", 1, {
-        delay: 0.4,
+        delay: 0.2,
         y: 10,
         opacity: 0,
         ease: Expo.easeInOut,
@@ -424,7 +437,7 @@
         "#menu li a",
         1,
         {
-          delay: 0.4,
+          delay: 0.2,
           opacity: 0,
           ease: Expo.easeInOut,
         },
