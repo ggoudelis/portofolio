@@ -12,6 +12,8 @@
       <!-- stylesheet -->
       <link rel="stylesheet" href="style.css">
 
+      <link rel="shortcut icon" href="images/logo_g.png" />
+
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -78,7 +80,7 @@
                   <div class="progress_bar" id="Bar"></div>
 
             
-                  <span id="brand">
+                  <span id="brand2">
                         <a href="index.html"><img alt="Georgios Goudelis logo" src="images/logo_g.png" width="55" height="40"></a>
                   </span>
 
@@ -121,14 +123,21 @@
                               <div class="col-lg-12">
                                     <h3 class="wow fadeInUp" data-wow-delay="0.4s" style="color:#000">about me.</h3><br>
 
-                                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="color:#000">My name is Georgios Goudelis. I am an enthusiastic and hardworking individual, with skills and experience applicable in the design engineering industry. Having lived in many cultures and environments I am able to adapt with variable situations, allowing me towork efficiently with professionals. I am passionate about product design, regarding both functionality and aesthetics, primarily driven by meaningful innovation.</p>
+                                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="color:#000">
+                                          My name is Georgios Goudelis. I am an enthusiastic and hardworking individual, with skills and experience 
+                                          applicable in the design engineering industry. Having lived in many cultures
+                                          and environments. I am able to<br/>
+                                         adapt with variable situations, allowing me towork efficiently
+                                          with professionals. I am passionate about <br/>
+                                          product design, regarding both functionality and
+                                          aesthetics, primarily driven by meaningful innovation.</p>
 
                                     <p class="wow fadeInUp" data-wow-delay="0.4s" style="color:#000">
-                                          I have an academic background in mechanical engineering, product design and entrepreneurship. 
-                                          I also have 12 months of industry experience in a high-tech environment at EnOcean GmbH in Munich, Germany. 
-                                          In my free time I enjoy working on personal design projects and often prototype using my own 3D-printer. 
-                                          Additionally, I love to learn, travel and exercise.
-
+                                          I have an academic background in mechanical engineering, product design and entrepreneurship. I
+                                          also have <br/>12 months of industry experience in a high-tech environment at EnOcean GmbH in Munich,
+                                          Germany. In my free time <br/>
+                                          I enjoy working on personal design projects and often prototype using
+                                          my own 3D-printer. Additionally, I love to learn, travel and exercise.
 
                                     </p>
                                     <br><br>
@@ -142,9 +151,10 @@
                   </div>
             </div>
             <div class="container wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="solo-asset-area">
+                  <!-- <div class="solo-asset-area">
                         <div class="timeline wow fadeInUp"></div>
-                  </div>
+                  </div> -->
+                  <object class="solo-asset-area" id="svg1" data="./images/assets/about_me_timeline.svg" type="image/svg+xml"></object>
             </div>
 
            
@@ -232,7 +242,7 @@
 
       // nav animation
 
-      TweenMax.from("#brand", 1, {
+      TweenMax.from("#brand2", 1, {
             delay: 0.2,
             y: 10,
             opacity: 0,
