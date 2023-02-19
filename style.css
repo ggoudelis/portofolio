@@ -47,6 +47,15 @@ a:link {
   animation: typewriter 3.2s steps(40) 0.5s 1 normal both,
   blinkTextCussor 500ms steps(40) infinite normal;
   color: #000000;
+  /* border-right: 2px solid #000000; */
+  border-right-width: 1px;
+  /* border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000; */
+}
+
+@keyframes typewriter {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @keyframes typewriter {
@@ -54,7 +63,7 @@ a:link {
     width: 0;
   }
   to {
-    width: 18em;
+    width: 17.5em;
   }
 }
 
@@ -66,15 +75,6 @@ a:link {
     to {
       width: 17em;
     }
-  }
-}
-
-@keyframes blinkTextCussor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
   }
 }
 
@@ -102,6 +102,54 @@ nav {
   height: 80px;
   position: fixed;
   z-index: 1;
+  /* opacity: 0 */
+}
+
+#brand img {
+  width: 150px;
+  height: 70px;
+  transition: filter 0.3s ease-in-out;
+}
+
+#brand img:hover {
+  filter: brightness(150%);
+  animation: color-change 2s infinite;
+  /* spin 4s linear infinite; */
+  /*shake 1s ease-in-out 0s 1 alternate;*/
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) scale(1); opacity: 0.3; }
+  50% { transform: rotate(360deg) scale(1.2); opacity: 1; }
+  100% { transform: rotate(720deg) scale(1); opacity: 0.3; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px) rotate(-5deg); }
+  40% { transform: translateX(5px) rotate(5deg); }
+  60% { transform: translateX(-5px) rotate(-5deg); }
+  80% { transform: translateX(5px) rotate(5deg); }
+  100% { transform: translateX(0); }
+}
+
+
+
+@keyframes color-change {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(180deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+#brand2 img {
+  width: 150px;
+  height: 70px;
+  transition: filter 0.3s ease-in-out;
+}
+
+#brand2 img:hover {
+  filter: brightness(150%);
+  animation: color-change 2s infinite;
 }
 
 nav #brand {
@@ -158,7 +206,7 @@ nav #menu li {
   display: inline-block;
   cursor: pointer;
   font-weight: 300;
-  line-height: 60px;
+  line-height: 20px;
   position: relative;
   transition: all 0.3s ease-out;
 }
@@ -362,7 +410,7 @@ nav #menu li a:hover {
 }
 
 .acc-toggle-icon {
-  color: #383838;
+  color: #eb4f1a;
 }
 
 .project-link ul {
@@ -417,7 +465,7 @@ nav #menu li a:hover {
 .vertical {
   margin-top: 10px;
   border-left: 1px solid #000000;
-  height: 60px;
+  height: 40px;
   position: absolute;
   left: 50%;
 }
@@ -425,7 +473,7 @@ nav #menu li a:hover {
 .vertical2 {
   margin-top: 10px;
   border-left: 1px solid #000000;
-  height: 50px;
+  height: 40px;
   position: absolute;
   left: 50%;
 }
@@ -477,7 +525,15 @@ button {
   background: none;
   z-index: 1;
   /* cursor: crosshair; */
-  transition: 0.8s ease-out;
+  /* transition: 0.8s ease-out; */
+} 
+
+button:focus {
+  outline: none !important;;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
 
 .myBtn:hover {
@@ -553,49 +609,33 @@ button {
 }
 
 .project1 {
-  background: url(images/project1_new.jpg) no-repeat 50% 50%;
   height: 450px;
   width: 450px;
   background-size: cover;
+  cursor: pointer;
 }
 
-.project1::after {
-  /* content: "Toothbrush redesigned"; */
-  font-family: "Roboto Mono";
-  font-size: 34px;
-  position: relative;
-  color: rgb(0, 0, 0);
-  display: block;
-  /* top: 10%;
-  left: -85%; */
-  right: 0;
-  bottom: 0;
-}
-
-.project1:hover .overlay {
+/* .project1:hover .overlay {
   opacity: 0.4;
   transform: translateY(0);
-}
+} */
 
 .project2 {
-  background: url(images/project2_new.jpg) no-repeat 50% 50%;
   height: 450px;
   width: 450px;
   background-size: cover;
+  cursor: pointer;
 }
-
+/* 
 .project2::after {
-  /* content: "Recycling sorter"; */
   font-family: "Roboto Mono";
   font-size: 34px;
   position: relative;
   color: rgb(0, 0, 0);
   display: block;
-  /* top: 80%;
-  left: 120%; */
   right: 0;
   bottom: 0;
-}
+} */
 
 .project2:hover .overlay {
   opacity: 0.6;
@@ -606,7 +646,7 @@ button {
 /* project1 */
 
 .asset_1 {
-  background: url(images/assets/Asset_1.svg);
+  background: url(images/fan-heater/1.1-market-research.svg);
   height: 400px;
   width: 400px;
   background-size: cover;
@@ -620,143 +660,183 @@ button {
 }
 
 .asset_4 {
-  background: url(images/assets/Asset_4.svg);
+  background: url(images/fan-heater/1.2-interviews.svg);
   height: 380px;
   width: 100%;
   background-size: cover;
 }
 
 .asset_5 {
-  background: url(images/assets/Asset_5.svg);
-  height: 450px;
-  width: 100%;
+  background: url(images/fan-heater/1.3-insights.svg);
+  height: 250px;
+  width: 750px;
   background-size: cover;
 }
 
 .asset_6 {
-  background: url(images/assets/Asset_6.svg);
+  background: url(images/fan-heater/problem/2.1\ Brief.svg);
   height: 800px;
   width: 100%;
   background-size: cover;
 }
 
 .asset_7 {
-  background: url(images/assets/Asset_7.svg);
+  background: url(images/fan-heater/problem/2.2\ Generative\ sketches.svg);
   height: 600px;
   width: 100%;
   background-size: cover;
 }
 
 .asset_8 {
-  background: url(images/assets/Asset_8.svg);
-  height: 800px;
-  width: 450px;
+  background: url(images/fan-heater/problem/2.3\ Concepts.svg);
+  height: 500px;
+  width: 1100px;
   background-size: cover;
 }
 
 .asset_9 {
-  background: url(images/assets/Asset_9.svg);
-  height: 700px;
-  width: 450px;
+  background: url(images/fan-heater/problem/2.4\ Concept\ details.svg);
+  height: 300px;
+  width: 1100px;
   background-size: cover;
 }
 
 .asset_10 {
-  background: url(images/assets/Asset_10.svg);
-  height: 850px;
-  width: 550px;
+  background: url(images/fan-heater/problem/2.5\ Prototyping\ and\ User\ Testing\ Pt1.svg);
+  height: 450px;
+  width: 1000px;
   background-size: cover;
 }
 
 .asset_11 {
-  background: url(images/assets/Asset_11.svg);
-  height: 700px;
-  width: 500px;
+  background: url(images/fan-heater/problem/2.6\ Prototyping\ and\ User\ Testing\ Pt2.svg);
+  height: 550px;
+  width: 1100px;
   background-size: cover;
 }
 
 .asset_15 {
-  background: url(images/assets/Asset_15.svg);
-  height: 620px;
+  background: url(images/fan-heater/problem/2.7\ Final\ Shape.svg);
+  height: 720px;
+  width: 100%;
+  background-size: cover;
+}
+
+.asset_16 {
+  background: url(images/fan-heater/problem/2.8\ Structural\ Optimisation.svg);
+  height: 800px;
   width: 100%;
   background-size: cover;
 }
 
 .Solution_1 {
   background: url(images/assets/Solution_1.svg);
-  height: 1700px;
-  width: 100%;
+  height: 900px;
+  width: 60%; 
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .Solution_2 {
-  background: url(images/assets/Solution_2.svg);
-  height: 400px;
-  width: 100%;
-  background-size: cover;
+  background: url(images/fan-heater/solution/3.2\ on\ off\ switch.svg);
+  height: 500px;
+  width: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
+/* .single-img {
+  margin: 0 2px;
+} */
+
 .Solution_3 {
-  background: url(images/assets/Solution_3.svg);
-  height: 450px;
-  width: 100%;
-  background-size: cover;
+  background: url(images/fan-heater/solution/3.3\ Stabilizer.svg);
+  height: 500px;
+  width: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 .Solution_4 {
-  background: url(images/assets/Solution_4.svg);
-  height: 420px;
-  width: 100%;
-  background-size: cover;
+  background: url(images/fan-heater/solution/3.4\ Max\ Power.svg);
+  height: 500px;
+  width: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 .Solution_5 {
-  background: url(images/assets/Solution_5.svg);
+  background: url(images/fan-heater/solution/3.5\ Air\ flux.svg);
   height: 420px;
   width: 100%;
   background-size: cover;
 }
 
 .Solution_6 {
-  background: url(images/assets/Solution_6.svg);
-  height: 420px;
+  background: url(images/fan-heater/solution/3.7\ Cable\ storage.svg);
+  height: 500px;
   width: 100%;
   background-size: cover;
 }
 
 .Solution_7 {
-  background: url(images/assets/Solution_7.svg);
-  height: 470px;
+  background: url(images/fan-heater/solution/3.8\ Exploded\ view.svg);
+  height: 670px;
   width: 100%;
   background-size: cover;
 }
 
 .Solution_8 {
-  background: url(images/assets/Solution_8.svg);
-  height: 620px;
+  background: url(images/fan-heater/solution/3.9\ Material\ Selection.svg);
+  height: 650px;
   width: 100%;
   background-size: cover;
 }
 
 .Solution_9 {
-  background: url(images/assets/Solution_9.svg);
+  background: url(images/fan-heater/solution/3.10\ Slider\ Mechanism.svg);
   height: 620px;
   width: 100%;
   background-size: cover;
 }
 
 .Solution_10 {
-  background: url(images/assets/Solution_10.svg);
-  height: 650px;
-  width: 100%;
-  background-size: cover;
+  background: url(images/fan-heater/solution/3.11\ Circuit\ Diagram.svg);
+  height: 700px;
+  width: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.Solution_11 {
+  background: url(images/fan-heater/solution/3.12\ Aesthetic\ Prototype.svg);
+  height: 500px;
+  width: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 .Solution_12 {
   background: url(images/assets/pexels-george-milton-7034743.png);
-  height: 1700px;
-  width: 100%;
+  height: 1000px;
+  width: 60%; 
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .timeline {
@@ -776,23 +856,30 @@ button {
   cursor: pointer;
 }
 
-.project3:hover {
-  color: green;
-  background-color: green;
+.item-project {
+  /* height: 250px;
+  width: 250px;
+  background-size: cover; */
+  cursor: pointer;
 }
 
-.project3::after {
-  /* content: "Sustainable kettle"; */
+/* /* .project3:hover {
+  color: green;
+  background-color: green;
+} */
+
+/* .project3::after {
+  content: "Sustainable kettle"; 
   font-family: "Roboto Mono";
-  font-size: 44px;
-  position: relative;
-  color: rgb(0, 0, 0);
-  display: block;
-  /* top: 10%;
-  left: -85%;
-  right: 0;
-  bottom: 0; */
-}
+  content: "Sustainable Kettle\A\ 2020";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}  */
 
 /* .project3:hover .overlay {
   opacity: 0.4;
@@ -804,10 +891,10 @@ button {
   height: 600px;
   width: 500px;
   background-size: cover;
+  cursor: pointer;
 }
 
-.project4::after {
-  /* content: "Mini arcade box"; */
+/* .project4::after {
   font-family: "Roboto Mono";
   font-size: 34px;
   position: relative;
@@ -821,18 +908,19 @@ button {
 
 .project4:hover .overlay {
   opacity: 0.4;
-}
+} */
 
 .cool-link::after {
   content: "";
   display: block;
   width: 0;
-  height: 1px;
+  height: 0px;
   background: rgb(0, 0, 0);
   transition: width 0.3s;
 }
 
-.cool-link:hover::after {
+.cool-link:hover::after, .cool-link:focus::after{
+  padding-bottom: 3px; /*alagi*/
   width: 100%;
   transition: width 0.3s;
 }
@@ -883,8 +971,9 @@ button {
 }
 
 .hr {
-  background: rgba(0, 0, 0, 0.2);
-  height: 2px;
+  background: black;
+  /* background: #eb4f1a; */
+  height: 1px;
 }
 
 .info h4 {
@@ -1166,20 +1255,30 @@ p i {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 20px 2px;
 }
+
+/* @media (max-width: 767px) {
+  .img-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-area .project3 {
+    margin-bottom: 20px;
+  }
+} */
 
 .copyright {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .last-item {
   margin-left: auto;
-
 }
 
 .asset-area {
@@ -1187,7 +1286,7 @@ p i {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .solo-asset-area {
@@ -1288,10 +1387,19 @@ p i {
 
 /* Social Media*/
 
+@media (max-width: 767px) {
+  .mf-social-side-list{
+    /* position: fixed;
+    top: 80vh;
+    left: 13.5px;
+    z-index: 100; */
+    display: none;
+  }
+}
 
 .mf-social-side-list {
   position: fixed;
-  top: 65vh;
+  top: 80vh;
   left: 50px;
   z-index: 100;
 }
@@ -1315,6 +1423,8 @@ p i {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  font-size: 18px;
+  margin-top: 0px;
 }
 .mf-social-side-list ul li a:hover {
   opacity: .9;
@@ -1337,7 +1447,7 @@ p i {
   color: white;
   background: #0077B5;
 }
-.mf-social-side-list ul li a[href*='twitter']:hover {
+.mf-social-side-list ul li a[href*='mail']:hover {
   color: white;
   background: #00acee;
 }
@@ -1364,6 +1474,156 @@ p i {
 }
 
 
+.single-img-container {
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  margin: 0px 10px;
+  transition: all 0.5s ease;
+}
+
+.single-img-container:hover .img-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(163, 219, 205, 0.8);
+  /* opacity: 0.3; */
+  opacity: 0.6;
+  transition: 0.5s ease;
+  background: #2e3135
+}
+
+.img-text-container {
+  display: flex; ;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.see-more {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 8px;
+  background-color: #faf5f0;
+  color: rgb(85, 85, 85);;
+  border: 2px solid rgb(85, 85, 85);
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.see-more:hover {
+  border: 2px solid #eb4f1a;
+  color: #eb4f1a;;
+  cursor: pointer;
+}
+
+.album_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .album_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .album_container .item {
+    margin-bottom: 20px;
+  }
+}
 
 
+/* den leitourgei */
 
+.selected[data-filter="products"] ~ .album_container .products {
+  transform: translateX(0%);
+}
+
+.selected[data-filter="projects"] ~ .album_container .products {
+  transform: translateX(-100%);
+}
+
+.selected[data-filter="collaborations"] ~ .album_container .products {
+  transform: translateX(-200%);
+}
+
+
+.item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter li {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  padding: 8px 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.filter li.active,
+.filter li:hover {
+  color: #eb4f1a;
+  
+}
+
+
+@media only screen and (max-width: 767px) {
+  /* .filter ul {
+    flex-direction: column;
+  } */
+  
+  .filter li {
+    margin: 10px;
+  }
+}
+
+
+.photo-section {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.photo-section.open {
+  height: auto;
+}

@@ -1,315 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Georgios Goudelis" />
-    <meta
-      name="description"
-      content="This is Georgios Goudelis portfolio webpage"
-    />
 
-    <title>Portfolio | Georgios Goudelis</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Georgios Goudelis" />
+  <meta name="description" content="This is Georgios Goudelis portfolio webpage" />
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+  <title>Portfolio | Georgios Goudelis</title>
 
-    <link rel="shortcut icon" href="images/logo_g.png" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="shortcut icon" href="images/tab-logo.svg" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-    <!-- bootstrap cdns -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- bootstrap cdns -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- terminal effect -->
-    <script src="t.min.js"></script>
-    <script src="wow.min.js"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+    rel="stylesheet" />
 
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!--------------- navbar starts here --------------->
-      <nav>
-        <!--------------- social media --------------->
-        <!-- <div class="sidebar">
-          <div class="social facebook">
-            <a href=" https://www.facebook.com " target="_blank">
-              <p>Like on Facebook <i class="fa fa-facebook"></i></p>
-            </a>
-          </div>
-          <div class="social twitter">
-            <a href=" https://www.twitter.com " target="_blank">
-              <p>Follow on Twitter<i class="fa fa-twitter"></i></p>
-            </a>
-          </div>
-          <div class="social google">
-            <a href=" https://www.plus.google.com " target="_blank">
-              <p>&nbspAdd on Google+<i class="fa fa-google-plus"></i></p>
-            </a>
-          </div>
-        </div> -->
+  <!-- terminal effect -->
+  <script src="t.min.js"></script>
+  <script src="wow.min.js"></script>
 
-        
+  <!-- for on scroll animations -->
+  <link rel="stylesheet" href="animate.css" />
+</head>
 
-        <div class="progress_bar" id="Bar"></div>
+<body>
+  <div class="wrapper">
+    <!--------------- navbar starts here --------------->
+    <nav>
+      <!--------------- social media --------------->
 
-        <span id="brand2">
-          <a href="index.html"
-            ><img
-              alt="Georgios Goudelis logo"
-              src="images/logo_g.png"
-              width="55"
-              height="40"
-          /></a>
-        </span>
+      <div class="progress_bar" id="Bar"></div>
 
-        <ul id="menu">
-          <li class="cool-link">
-            <a href="index.html">home<span>.</span></a>
-          </li>
-          <li class="cool-link">
-            <a href="work.html">work<span>.</span></a>
-          </li>
-          <li class="cool-link">
-            <a href="about.html">about me<span>.</span></a>
-          </li>
-        </ul>
+      <span id="brand2">
+        <a href="/"><img alt="Georgios Goudelis logo" src="images/website_logo.png" width="150" height="70" /></a>
+      </span>
 
-        <div id="toggle">
-          <div class="span">menu</div>
-        </div>
-      </nav>
+      <ul id="menu">
+        <li class="cool-link">
+          <a href="/">home<span>.</span></a>
+        </li>
+        <li class="cool-link">
+          <a href="work.html">work<span>.</span></a>
+        </li>
+        <li class="cool-link">
+          <a href="about.html">about me<span>.</span></a>
+        </li>
+      </ul>
 
-      <div id="resize">
-        <div class="close-btn">close</div>
-
-        <ul id="menu">
-          <li>
-            <a href="index.html">home<span>.</span></a>
-          </li>
-          <li>
-            <a href="work.html">work<span>.</span></a>
-          </li>
-          <li>
-            <a href="about.html">about me<span>.</span></a>
-          </li>
-        </ul>
+      <div id="toggle">
+        <div class="span">menu</div>
       </div>
+    </nav>
 
-      <div class="mf-social-side-list wow fadeInUp" data-wow-delay="0.6s">
-        <ul>
+    <div id="resize">
+      <div class="close-btn">close</div>
+
+      <ul id="menu">
         <li>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+          <a href="/">home<span>.</span></a>
         </li>
         <li>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="work.html">work<span>.</span></a>
         </li>
         <li>
-        <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="about.html">about me<span>.</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mf-social-side-list wow fadeInUp" data-wow-delay="0.6s">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/ggoudelis/" target="_blank"><i style="font-size: 22px;"
+              class="fa fa-instagram"></i></a>
         </li>
         <li>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i
+              class="fa fa-linkedin"></i></a>
         </li>
         <li>
-        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="mailto:ggoudelis97@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
         </li>
-        </ul>
-        </div>
+      </ul>
+    </div>
 
-      <!--------------- navbar ends here --------------->
+    <!--------------- navbar ends here --------------->
 
-      <div class="whitespace"></div>
+    <div class="whitespace"></div>
 
-      <!--------------- hero section starts here --------------->
-      <div class="container">
-        <div class="hero-content">
-          <br />
+    <!--------------- hero section starts here --------------->
+    <div class="container">
+      <div class="hero-content">
+        <br />
 
-          <div class="row">
-            <div class="col-lg-12">
-              <h3
-                class="wow fadeInUp"
-                data-wow-delay="0.3s"
-                style="color: #000"
-              >
-                work.
-              </h3>
-              <br />
-              <p class="wow fadeInUp" data-wow-delay="0.3s" style="color: #000">
-                This is a collection of my most significant pieces of work, which is the result of my desire to improve the world we live in. This stems from my curiosity about my surroundings and my personal experiences,from which I draw inspiration. When designing, I have a methodical and analytical approach primarily based on logic, however I also place emphasis on aesthetics as it plays a vital role in human experience and in embodying meaning within products. 
-
-<br/><br/>My appreciation for design goes beyond problem solving products, driving me to also work on interesting creations and projects that help me explore and expand my creative capabilities.
-              </p>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="wow fadeInUp" data-wow-delay="0.3s" style="color: #000">
+              work.
+            </h3>
+            <div class="hr wow fadeInUp" data-wow-delay="0.3s">
+              <div class="row"></div>
             </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!--------------- hero section ends here --------------->
-      <div class="container">
-        <div class="whitespace"></div>
-        <!-- <div class="whitespace"></div> -->
-        
-        
-        <div class="img-area">
-          <div 
-            class="single-img project project3 wow fadeInUp" data-wow-delay="0.4s"
-            onclick="location.href='project3.html'"
-          >
-          </div>
-          
-          <div class=" project project2 wow fadeInUp" data-wow-delay="0.4s"></div>
-        </div>
-      
-      <br/>
-        <div class="img-area">
-            <div 
-            class="single-img project project1 wow fadeInUp"
-            onclick="location.href='project3.html'"
-            >
+            <div class="filter wow fadeInUp" data-wow-delay="0.3s">
+              <ul>
+                <li class="active" data-filter="all">ALL</li>
+                <li data-filter="products">PRODUCTS</li>
+                <li data-filter="projects">PROJECTS</li>
+                <li data-filter="collaborations">COLLABORATIONS</li>
+              </ul>
             </div>
-            <div class="project project1 wow fadeInUp"></div>
+            <div class="album_container wow fadeInUp" data-wow-delay="0.3s">
+              <div class="item products item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/foldable_bike.png" alt="Product 1">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+                </div>
+              </div>
+              <div class="item products item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/fan-heater.png" alt="Project 1">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"Venti" Fan Heater</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+                </div>
+              </div>
+              <div class="item products item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/project3_new.jpg" alt="Collaboration 1">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Sustainable Kettle</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2020</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+                </div>
+              </div>
+              <div class="item products item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/recycle.jpg" alt="Product 2">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Recycling Sorter</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2020</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+                </div>
+              </div>
+              <div class="item projects item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/foldable_bike.png" alt="Project 2">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Project</p>
+                </div>
+              </div>
+              <div class="item collaborations item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/foldable_bike.png" alt="Collaboration 2">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Collaboration</p>
+                </div>
+              </div>
+              <div class="item products item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/foldable_bike.png" alt="Product 3">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+                </div>
+              </div>
+              <div class="item projects item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/foldable_bike.png"" alt=" Project 3">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Project</p>
+                </div>
+              </div>
+              <div class="item collaborations item-project single-img-container"
+                onclick="location.href='fan-heater-venti.html'">
+                <img src="images/foldable_bike.png" alt="Collaboration 3">
+                <div class="img-text-container">
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Collaboration</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
 
-      <!--------------- projects section ends here --------------->
 
-      <!--------------- footer starts here --------------->
-      <div class="footer">
-        <div class="container">
-          <br /><br />
+    <!--------------- hero section ends here --------------->
 
-          <div class="collab">
-            <div class="row">
-              <div class="col-lg-12">
-                <p class="wow fadeInUp" style="color: #000">
-                  Got an interesting project? I can help you.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <br />
+    <!--------------- projects section ends here --------------->
 
-          <div class="hr">
-            <div class="row"></div>
-          </div>
-
-          <br />
-
-          <div class="info">
-            <div class="row">
-              <div class="col-lg-4" id="personal">
-                <p class="wow fadeInUp">connect with me</p>
-                <h4 style="color: #000" class="wow fadeInUp" data-wow-delay="0.2s">
-                  ig @ggoudelis
-                </h4>
-              </div>
-
-              <div class="col-lg-4" id="media"></div>
-
-              <div class="col-lg-4" id="address">
-                <p class="wow fadeInUp" data-wow-delay="0s">contact me</p>
-                <h4 style="color: #000" class="wow fadeInUp" data-wow-delay="0.2s">
-                  ggoudelis97@gmail.com
-                </h4>
-                <br /><br />
-              </div>
-            </div>
-            <div class="copyright wow fadeInUp">
-              <span style="color: grey; font-size: 14px;">Copyrights @ 2022 Georgios Goudelis</span>
-            </div>
-             <br/>
-          </div>
+    <!--------------- footer starts here --------------->
+    <div class="footerr">
+      <div class="container">
+        <div class="hr">
+          <div class="row"></div>
         </div>
+
+        <br />
+
       </div>
-
-      <!--------------- footer ends here --------------->
-
+      <div class="copyright wow fadeInUp">
+        <span style="color: grey; font-size: 14px;">Copyrights @ 2022 Georgios Goudelis.</span>
+        <span style="color: grey; font-size: 14px;">All rights reserved.</span>
+      </div>
+      <br />
     </div>
+  </div>
+  </div>
 
-    <!-- greensock cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  </br>
 
-    <script type="text/javascript">
-      $('html, body').animate({ scrollTop: 0 }, 'medium');
-      // Function execute When the user scrolls the page
-      $(document).ready(function () {
-        $(this).scrollTop(0);
-      });
+  <!--------------- footer ends here --------------->
 
-      // Function execute When the user scrolls the page
-      window.onscroll = () => {
-        var winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        var height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("Bar").style.width = scrolled + "%";
-      };
+  </div>
 
-      // navigation starts here
-      $("#toggle").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
+  <!-- greensock cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-      $("#resize ul li a").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
+  <script type="text/javascript">
+    $('html, body').animate({ scrollTop: 0 }, 'medium');
+    // Function execute When the user scrolls the page
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
 
-      $(".close-btn").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
+    // Function execute When the user scrolls the page
+    window.onscroll = () => {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("Bar").style.width = scrolled + "%";
+    };
 
-      // navigation ends here
+    // navigation starts here
+    $("#toggle").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
 
-      // nav animation
+    $("#resize ul li a").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
 
-      TweenMax.from("#brand2", 1, {
+    $(".close-btn").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    // navigation ends here
+
+    // nav animation
+
+    TweenMax.from("#brand2", 1, {
+      delay: 0.2,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut,
+    });
+
+    TweenMax.staggerFrom(
+      "#menu li a",
+      1,
+      {
         delay: 0.2,
-        y: 10,
         opacity: 0,
         ease: Expo.easeInOut,
+      },
+      0.1
+    );
+
+    // nav animation ends
+
+    new WOW().init();
+
+    const filterButtons = document.querySelectorAll('.filter li');
+    const container = document.querySelector('.container');
+
+    // Loop through all filter buttons and add event listener to filter images
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach((button) => {
+          button.classList.remove('active');
+        });
+        // Add active class to clicked button
+        button.classList.add('active');
+        // Get the data filter value of clicked button
+        const filterValue = button.getAttribute('data-filter');
+        // Loop through all images and show only those that match the filter
+        // Loop through all images and show only those that match the filter
+        document.querySelectorAll('.item').forEach((item) => {
+          if (filterValue === 'all') {
+            item.style.display = 'flex';
+          } else if (item.classList.contains(filterValue)) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
       });
+    });
 
-      TweenMax.staggerFrom(
-        "#menu li a",
-        1,
-        {
-          delay: 0.2,
-          opacity: 0,
-          ease: Expo.easeInOut,
-        },
-        0.1
-      );
+    //den leitourgei
 
-      // nav animation ends
+    const filterButtons2 = document.querySelectorAll(".filter li");
+    const galleryItems = document.querySelectorAll(".item");
 
-      new WOW().init();
-    </script>
-  </body>
+    // Add event listener to each filter button
+    filterButtons2.forEach(button => {
+      button.addEventListener("click", () => {
+        const filterValue = button.dataset.filter;
+        filterGallery(filterValue);
+      });
+    });
+
+    function filterGallery(filter) {
+      galleryItems.forEach(item => {
+        // If the item matches the filter or the filter is set to "all", show it
+        if (item.classList.contains(filter) || filter === "all") {
+          item.style.display = "block";
+          // Add the "animate" class to animate the item
+          item.classList.add("animate");
+        } else {
+          // Otherwise, hide it
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // Remove the "animate" class when the animation is finished
+    galleryItems.forEach(item => {
+      item.addEventListener("animationend", () => {
+        item.classList.remove("animate");
+      });
+    });
+  </script>
+</body>
+
 </html>
