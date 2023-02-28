@@ -106,7 +106,7 @@ nav {
 }
 
 #brand img {
-  width: 150px;
+  width: 130px;
   height: 70px;
   transition: filter 0.3s ease-in-out;
 }
@@ -142,7 +142,7 @@ nav {
 }
 
 #brand2 img {
-  width: 150px;
+  width: 130px;
   height: 70px;
   transition: filter 0.3s ease-in-out;
 }
@@ -353,11 +353,73 @@ nav #menu li a:hover {
   line-height: 58px;
 }
 
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 26px;
+@media screen and (max-width: 768px) {
+  .row {
+    justify-content: center;
   }
 }
+
+.container_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* 
+.item {
+  width: 25%;
+}
+
+.container_skills > div {
+  flex: 50% 20%; 
+
+  margin-bottom: 10px;
+} */
+
+/* .image-container {
+  display: flex;
+  justify-content: center;
+} */
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+@media (max-width: 768px) {
+  .container_skills {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+/* @media (max-width: 768px) {
+  .pol {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 540px) {
+  .pol {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 414px) {
+  .pol {
+    font-size: 21px;
+  }
+
+  @media (max-width: 280px) {
+    .pol {
+      font-size: 17px;
+    }
+} */
 
 /*--------------- scroll down icon animation --------------- */
 .scroll-down {
@@ -599,8 +661,9 @@ button::-moz-focus-inner {
 
 .download_btn {
   padding: 15px 30px;
+  border: 2px solid black;
   border-color: black;
-  color: black
+  color: black;
 }
 
 .download_btn:hover {
@@ -910,6 +973,8 @@ button::-moz-focus-inner {
   opacity: 0.4;
 } */
 
+
+
 .cool-link::after {
   content: "";
   display: block;
@@ -920,7 +985,7 @@ button::-moz-focus-inner {
 }
 
 .cool-link:hover::after, .cool-link:focus::after{
-  padding-bottom: 3px; /*alagi*/
+  padding-bottom: 2px; /*alagi*/
   width: 100%;
   transition: width 0.3s;
 }
@@ -1375,7 +1440,7 @@ p i {
   border: solid 8px #eb4f1a;
 }
 .arrow:hover:after, .arrow:hover:before, .arrow-left:hover:after, .arrow-left:hover:before {
-  background: #777;
+  background: rgb(0, 0, 0);
 }
 .arrow:active, .arrow-left:active {
   border: solid 8px rgb(0, 0, 0);
@@ -1384,15 +1449,17 @@ p i {
   background: #111;
 }
 
+@media (max-width: 767px) {
+  .arrow-left,
+  .arrow {
+    display: none;
+  }
+}
 
 /* Social Media*/
 
 @media (max-width: 767px) {
   .mf-social-side-list{
-    /* position: fixed;
-    top: 80vh;
-    left: 13.5px;
-    z-index: 100; */
     display: none;
   }
 }
@@ -1408,7 +1475,7 @@ p i {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin:0
+  margin:0;
 }
 .mf-social-side-list ul li a {
   color: black;
@@ -1423,8 +1490,8 @@ p i {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  font-size: 18px;
-  margin-top: 0px;
+  font-size: 20px;
+  margin-top: 4px;
 }
 .mf-social-side-list ul li a:hover {
   opacity: .9;
@@ -1439,10 +1506,6 @@ p i {
   color: white;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
-.mf-social-side-list ul li a[href*='youtube']:hover {
-  color: white;
-  background: #c4302b;
-}
 .mf-social-side-list ul li a[href*='linkedin']:hover {
   color: white;
   background: #0077B5;
@@ -1451,6 +1514,11 @@ p i {
   color: white;
   background: #00acee;
 }
+/* 
+.mf-social-side-list ul li a i {
+  font-size: 22px; 
+} */
+
 
 
 .con{
@@ -1626,4 +1694,51 @@ p i {
 
 .photo-section.open {
   height: auto;
+}
+
+/* title */
+@media screen and (max-width: 768px) {
+  .row {
+    margin-top: 80px;
+  }
+}
+
+/* Download button */
+@media (max-width: 767px) {
+  .download_btn {
+    font-size: 16px;
+    padding: 12px 17px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* apply smaller font size for smaller screens */
+@media (max-width: 768px) {
+  .hero .header .pol {
+    font-size: 28px;
+  }
+}
+
+/* apply even smaller font size for even smaller screens */
+@media (max-width: 480px) {
+  .hero .header .pol {
+    font-size: 20px;
+  }
+}
+
+.footer-about {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .footer-about {
+    position: relative;
+  }
 }
