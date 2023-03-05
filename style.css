@@ -749,6 +749,18 @@ button::-moz-focus-inner {
   .asset_process {
     height: 250vh;
   }
+}
+
+@media screen and (max-width: 912px) {
+  .asset_process {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .asset_process {
+    height: 130vh;
+  }
 } 
 
 .asset_6 {
