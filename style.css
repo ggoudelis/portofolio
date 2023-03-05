@@ -735,6 +735,22 @@ button::-moz-focus-inner {
   background-size: cover;
 }
 
+.asset_process {
+  background: url(images/fan-heater/process/Process_Big\ photo\ test.svg);
+  height: 500vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+ @media screen and (max-width: 1080px) {
+  .asset_process {
+    height: 250vh;
+  }
+} 
+
 .asset_6 {
   background: url(images/fan-heater/problem/2.1\ Brief.svg);
   height: 800px;
