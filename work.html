@@ -351,8 +351,10 @@
       currentIndex = (currentIndex + 1) % images.length;
       collabImg.style.opacity = '0';
       setTimeout(function () {
+        collabImg.onload = function () {
+          collabImg.style.opacity = '1';
+        }
         collabImg.src = images[currentIndex];
-        collabImg.style.opacity = '1';
       }, 500);
     }, 3000);
 
