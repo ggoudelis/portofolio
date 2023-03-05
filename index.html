@@ -38,11 +38,12 @@
 <body>
   <div class="wrapper">
     <!--------------- navbar starts here --------------->
-    <nav>
+    <nav id="navbar" class="sticky-nav">
       <!--------------- social media --------------->
 
       <div class="progress_bar" id="Bar"></div>
 
+      <div>
       <ul id="brand">
         <a href="/"><img alt="Georgios Goudelis logo" src="images/website_logo.png" width="100px" height="170" /></a>
       </ul>
@@ -58,6 +59,7 @@
           <a href="about.html" class="cool-link">about me<span>.</span></a>
         </li>
       </ul>
+    </div>
 
       <div id="toggle">
         <div class="span" style="color: black;">menu</div>
@@ -358,6 +360,15 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("Bar").style.width = scrolled + "%";
     };
+
+    window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > navbar.offsetHeight) {
+    navbar.classList.add("hide");
+  } else {
+    navbar.classList.remove("hide");
+  }
+});
 
     // button handlers
 

@@ -106,8 +106,8 @@ nav {
 }
 
 #brand img {
-  width: 130px;
-  height: 70px;
+  width: 150px;
+  height: 80px;
   transition: filter 0.3s ease-in-out;
 }
 
@@ -142,8 +142,8 @@ nav {
 }
 
 #brand2 img {
-  width: 130px;
-  height: 70px;
+  width: 150px;
+  height: 80px;
   transition: filter 0.3s ease-in-out;
 }
 
@@ -202,6 +202,7 @@ nav #menu {
 }
 
 nav #menu li {
+  padding-top: 10px;
   padding-left: 20px;
   display: inline-block;
   cursor: pointer;
@@ -973,14 +974,20 @@ button::-moz-focus-inner {
   opacity: 0.4;
 } */
 
+.cool-link {
+  position: relative;
+  text-decoration: none;
+}
 
 
 .cool-link::after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: -1px;
   width: 0;
   height: 0px;
-  background: rgb(0, 0, 0);
+  background: #eb4f1a;
   transition: width 0.3s;
 }
 
@@ -1741,4 +1748,27 @@ p i {
   .footer-about {
     position: relative;
   }
+}
+
+.collab-img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* .collab-img.fade-out {
+  opacity: 0;
+}
+
+.collab-img.fade-in {
+  opacity: 1;
+} */
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky-nav.hide {
+  transform: translateY(-100%);
 }

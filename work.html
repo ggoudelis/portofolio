@@ -38,7 +38,7 @@
 <body>
   <div class="wrapper">
     <!--------------- navbar starts here --------------->
-    <nav>
+    <nav id="navbar">
       <!--------------- social media --------------->
 
       <div class="progress_bar" id="Bar"></div>
@@ -79,18 +79,19 @@
         </li>
         <div class="social-icons">
           <span>
-                <a href="https://www.instagram.com/ggoudelis/" target="_blank"><i style="font-size: 22px;"
-                            class="fa fa-instagram" style="color: #007bff;"></i></a>
+            <a href="https://www.instagram.com/ggoudelis/" target="_blank"><i style="font-size: 22px;"
+                class="fa fa-instagram" style="color: #007bff;"></i></a>
           </span>
 
           <span>
-                <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i
-                            class="fa fa-linkedin" style="color: #007bff;"></i></a>
+            <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i class="fa fa-linkedin"
+                style="color: #007bff;"></i></a>
           </span>
           <span>
-                <a href="mailto:ggoudelis97@gmail.com" target="_blank"><i class="fa fa-envelope" style="color: #007bff;"></i></a>
+            <a href="mailto:ggoudelis97@gmail.com" target="_blank"><i class="fa fa-envelope"
+                style="color: #007bff;"></i></a>
           </span>
-    </div>
+        </div>
       </ul>
     </div>
 
@@ -136,8 +137,7 @@
               </ul>
             </div>
             <div class="album_container wow fadeInUp" data-wow-delay="0.3s">
-              <div class="item products item-project single-img-container"
-                onclick="location.href='fortable-bike.html'">
+              <div class="item products item-project single-img-container" onclick="location.href='fortable-bike.html'">
                 <img src="images/foldable_bike.png" alt="Product 1">
                 <div class="img-text-container">
                   <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Fordable Bike</p>
@@ -174,16 +174,14 @@
               </div>
               <div class="item projects item-project single-img-container"
                 onclick="location.href='arcade-machine.html'">
-                <img src="images/arcade-machine.JPG" alt="Project 2">
+                <img src="images/arcade_square.jpg" alt="Project 2">
                 <div class="img-text-container">
                   <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Portable Arcade Box</p>
-                  <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2020</p>
                   <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Project</p>
                 </div>
               </div>
-              <div class="item projects item-project single-img-container"
-                onclick="location.href='3d-print.html'">
-                <img src="images/3d-prints.jpg"" alt=" Project 3">
+              <div class="item projects item-project single-img-container" onclick="location.href='3d-print.html'">
+                <img class="collab-img" src="images/3d-prints.jpg" alt=" Project 3">
                 <div class="img-text-container">
                   <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">3D Printed Models</p>
                   <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
@@ -258,6 +256,15 @@
       document.getElementById("Bar").style.width = scrolled + "%";
     };
 
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > navbar.offsetHeight) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+
     // navigation starts here
     $("#toggle").click(function () {
       $(this).toggleClass("on");
@@ -327,6 +334,28 @@
         });
       });
     });
+
+    var images = [
+      'images/IMG_0679.jpg',
+      'images/3d-prints.jpg',
+      'images/IMG_0674.jpg',
+      'images/IMG_0695.jpg',
+      'images/IMG_0703.jpg'
+    ];
+
+    var currentIndex = 1;
+    var collabImg = document.querySelector('.collab-img');
+    collabImg.src = images[currentIndex];
+
+    setInterval(function () {
+      currentIndex = (currentIndex + 1) % images.length;
+      collabImg.style.opacity = '0';
+      setTimeout(function () {
+        collabImg.src = images[currentIndex];
+        collabImg.style.opacity = '1';
+      }, 500);
+    }, 3000);
+
 
     //den leitourgei
 
