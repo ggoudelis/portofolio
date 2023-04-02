@@ -735,6 +735,41 @@ button::-moz-focus-inner {
   background-size: cover;
 }
 
+.solution_process {
+  background: url(images/fan-heater/Solution_Big\ photo_low\ res.svg);
+  height: 850vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+ @media screen and (max-width: 1080px) {
+  .solution_process {
+    height: 500vh;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .solution_process {
+    height: 400vh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .solution_process {
+    height: 250vh;
+  }
+} 
+
+.solution_gif {
+  background: url(images/bike/Gif-animation-for-main-menchanism.gif);
+  height: 480px;
+  width: 90%;
+  background-size: cover;
+}
+
 .asset_process {
   background: url(images/fan-heater/process/Process_Big\ photo\ test.svg);
   height: 500vh;
