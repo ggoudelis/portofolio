@@ -7,6 +7,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Roboto Mono" !important;
+  background-color: #faf5f0 !important;;
   background: #faf5f0 !important;
   color: #fff !important;
 }
@@ -765,8 +766,8 @@ button::-moz-focus-inner {
 
 .solution_gif {
   background: url(images/bike/Gif-animation-for-main-menchanism.gif);
-  height: 480px;
-  width: 90%;
+  height: 580px;
+  width: 100%;
   background-size: cover;
 }
 
