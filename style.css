@@ -738,7 +738,7 @@ button::-moz-focus-inner {
 
 .solution_process {
   background: url(images/fan-heater/Solution_Big\ photo_low\ res.svg);
-  height: 850vh;
+  height: 500vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -748,13 +748,13 @@ button::-moz-focus-inner {
 
  @media screen and (max-width: 1080px) {
   .solution_process {
-    height: 500vh;
+    height: 250;
   }
 }
 
 @media screen and (max-width: 912px) {
   .solution_process {
-    height: 400vh;
+    height: 180vh;
   }
 }
 
@@ -773,7 +773,7 @@ button::-moz-focus-inner {
 
 .asset_process {
   background: url(images/fan-heater/process/Process_Big\ photo\ test.svg);
-  height: 500vh;
+  height: 300vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
