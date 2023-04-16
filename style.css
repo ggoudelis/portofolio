@@ -877,8 +877,8 @@ button::-moz-focus-inner {
 } 
 
 .solution_process {
-  background: url(images/fan-heater/Solution_Big\ photo_low\ res.svg);
-  height: 500vh;
+  background: url(images/fan-heater/Fan_Heater_Solution_Complete.svg);
+  height: 700vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -886,21 +886,21 @@ button::-moz-focus-inner {
   margin: 0 auto;
 }
 
- @media screen and (max-width: 1080px) {
+@media screen and (max-width: 1300px) {
   .solution_process {
-    height: 250;
+    height: 500vh;
   }
 }
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 990px) {
   .solution_process {
-    height: 180vh;
+    height: 300vh;
   }
 }
 
 @media screen and (max-width: 512px) {
   .solution_process {
-    height: 250vh;
+    height: 200vh;
   }
 } 
 
@@ -912,8 +912,8 @@ button::-moz-focus-inner {
 }
 
 .asset_process {
-  background: url(images/fan-heater/process/Process_Big\ photo\ test.svg);
-  height: 300vh;
+  background: url(images/fan-heater/process/Fan_Heater_Process_Complete.svg);
+  height: 400vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -921,21 +921,21 @@ button::-moz-focus-inner {
   margin: 0 auto;
 }
 
- @media screen and (max-width: 1080px) {
+@media screen and (max-width: 1300px) {
   .asset_process {
-    height: 250vh;
+    height: 300vh;
   }
 }
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 990px) {
   .asset_process {
-    height: 180vh;
+    height: 150vh;
   }
 }
 
 @media screen and (max-width: 512px) {
   .asset_process {
-    height: 130vh;
+    height: 100vh;
   }
 } 
 
