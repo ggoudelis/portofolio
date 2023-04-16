@@ -738,12 +738,24 @@ button::-moz-focus-inner {
 
 .bike_problem {
   background: url(images/bike/problem/Esit\ Bike_Problem_Complete.svg);
-  height: 130vh;
+  height: 270vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .bike_problem {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .bike_problem {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 512px) {
