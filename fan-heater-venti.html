@@ -279,6 +279,7 @@
               <span style="color: grey; font-size: 14px;">Copyrights @ 2022 Georgios Goudelis.</span>
               <span style="color: grey; font-size: 14px;">All rights reserved.</span>
             </div>
+            <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
             <br />
           </div>
         </div>
@@ -359,6 +360,21 @@
       $(".close-btn").click(function () {
         $(this).toggleClass("on");
         $("#resize").toggleClass("active");
+      });
+
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.back-to-top').addClass('show');
+          } else {
+            $('.back-to-top').removeClass('show');
+          }
+        });
+
+        $('.back-to-top').click(function (e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: 0 }, '300');
+        });
       });
 
       // navigation ends here
