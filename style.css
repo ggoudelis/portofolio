@@ -736,6 +736,78 @@ button::-moz-focus-inner {
   background-size: cover;
 }
 
+.bike_problem {
+  background: url(images/bike/problem/Esit\ Bike_Problem_Complete.svg);
+  height: 130vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 512px) {
+  .bike_problem {
+    height: 70vh;
+  }
+} 
+
+.bike_process {
+  background: url(images/bike/process/Esit_Bike_Process_Complete.svg);
+  height: 650vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .bike_process {
+    height: 500vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .bike_process {
+    height: 300vh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .bike_process {
+    height: 200vh;
+  }
+} 
+
+.problem_process {
+  background: url(images/fan-heater/problem/Fan_Heater_Problem_Complete.svg);
+  height: 130vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .problem_process {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .problem_process {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .problem_process {
+    height: 50vh;
+  }
+} 
+
 .solution_process {
   background: url(images/fan-heater/Solution_Big\ photo_low\ res.svg);
   height: 500vh;
