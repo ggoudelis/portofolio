@@ -738,7 +738,7 @@ button::-moz-focus-inner {
 
 .bike_solution2 {
   background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt2.svg);
-  height: 500vh;
+  height: 700vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -748,13 +748,13 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 1300px) {
   .bike_solution2 {
-    height: 200vh;
+    height: 400vh;
   }
 }
 
 @media screen and (max-width: 990px) {
   .bike_solution2 {
-    height: 100vh;
+    height: 400vh;
   }
 }
 
@@ -776,13 +776,13 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 1300px) {
   .bike_solution {
-    height: 200vh;
+    height: 300vh;
   }
 }
 
 @media screen and (max-width: 990px) {
   .bike_solution {
-    height: 100vh;
+    height: 250vh;
   }
 }
 
