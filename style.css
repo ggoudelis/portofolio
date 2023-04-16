@@ -736,6 +736,62 @@ button::-moz-focus-inner {
   background-size: cover;
 }
 
+.bike_solution2 {
+  background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt2.svg);
+  height: 500vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .bike_solution2 {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .bike_solution2 {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .bike_solution2 {
+    height: 70vh;
+  }
+} 
+
+.bike_solution {
+  background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt1.svg);
+  height: 500vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .bike_solution {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .bike_solution {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .bike_solution {
+    height: 70vh;
+  }
+} 
+
 .bike_problem {
   background: url(images/bike/problem/Esit\ Bike_Problem_Complete.svg);
   height: 270vh;
