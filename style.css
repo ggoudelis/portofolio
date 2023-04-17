@@ -760,7 +760,7 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 512px) {
   .bike_solution2 {
-    height: 70vh;
+    height: 250vh;
   }
 } 
 
@@ -788,7 +788,7 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 512px) {
   .bike_solution {
-    height: 70vh;
+    height: 150vh;
   }
 } 
 
@@ -816,7 +816,7 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 512px) {
   .bike_problem {
-    height: 70vh;
+    height: 100vh;
   }
 } 
 
@@ -844,7 +844,7 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 512px) {
   .bike_process {
-    height: 200vh;
+    height: 230vh;
   }
 } 
 
@@ -900,7 +900,7 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 512px) {
   .solution_process {
-    height: 200vh;
+    height: 250vh;
   }
 } 
 
@@ -935,7 +935,7 @@ button::-moz-focus-inner {
 
 @media screen and (max-width: 512px) {
   .asset_process {
-    height: 100vh;
+    height: 140vh;
   }
 } 
 
