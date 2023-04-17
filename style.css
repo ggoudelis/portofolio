@@ -905,11 +905,40 @@ button::-moz-focus-inner {
 } 
 
 .solution_gif {
-  background: url(images/bike/Gif-animation-for-main-menchanism.gif);
-  height: 580px;
-  width: 100%;
+  background: url(images/Gif-animation-for-main-menchanism.gif);
+  height: 350px;
+  width: 550px;
   background-size: cover;
 }
+
+.solution_gif2 {
+  background: url(images/Safety-locking-gif.gif);
+  height: 350px;
+  width: 500px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 990px) {
+  .solution_gif {
+    height: 250px;
+    width: 350px;
+  }
+  .solution_gif2 {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .solution_gif {
+    height: 150px;
+    width: 200px;
+  }
+  .solution_gif2 {
+    height: 150px;
+    width: 200px;
+  }
+} 
 
 .asset_process {
   background: url(images/fan-heater/process/Fan_Heater_Process_Complete.svg);
@@ -1561,6 +1590,7 @@ p i {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .solo-asset-area {
