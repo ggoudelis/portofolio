@@ -2063,3 +2063,9 @@ p i {
     width: 300px;
   }
 }
+
+@media (max-width: 767px) {
+  .hero-content br {
+    display: none;
+  }
+}
