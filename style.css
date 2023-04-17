@@ -1659,9 +1659,18 @@ p i {
 }
 
 @media (max-width: 767px) {
-  .arrow-left,
-  .arrow {
-    display: none;
+  .col-2 {
+    padding: 0;
+  }
+  .col-8 {
+    margin-top: 0;
+  }
+  .col-2.text-right {
+    padding: 0;
+    text-align: left;
+  }
+  .col-2.text-right a.arrow {
+    margin-left: -20px;
   }
 }
 
@@ -2036,4 +2045,21 @@ p i {
 
 .back-to-top.show {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .project3 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project2 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project1 {
+    height: 300px;
+    width: 300px;
+  }
 }
