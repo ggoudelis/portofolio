@@ -1,274 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="author" content="Georgios Goudelis">
-      <meta name="description" content="This is Georgios Goudelis portfolio webpage">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Georgios Goudelis" />
+  <meta name="description" content="This is Georgios Goudelis portfolio webpage" />
 
-      <title>Portfolio | Georgios Goudelis</title>
+  <title>Portfolio | Georgios Goudelis</title>
 
-      <!-- stylesheet -->
-      <link rel="stylesheet" href="style.css">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="shortcut icon" href="images/tab-logo.svg" />
 
-      <!-- bootstrap cdns -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-      <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!-- terminal effect -->
-      <script src="t.min.js"></script>
-      <script src="wow.min.js"></script>
+  <!-- bootstrap cdns -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-      <!-- for on scroll animations -->
-      <link rel="stylesheet" href="animate.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+    rel="stylesheet" />
 
+  <!-- terminal effect -->
+  <script src="t.min.js"></script>
+  <script src="wow.min.js"></script>
+
+  <!-- for on scroll animations -->
+  <link rel="stylesheet" href="animate.css" />
 </head>
+
 <body>
+  <div class="wrapper">
+    <!--------------- navbar starts here --------------->
+    <nav id="navbar" class="sticky-nav">
+      <!--------------- social media --------------->
 
-      <div class="wrapper">
+      <!-- <div class="progress_bar" id="Bar"></div> -->
 
-            <!--------------- navbar starts here --------------->
-            <nav>
-                  <div class="progress_bar" id="Bar"></div>
+      <div>
+      <ul id="brand">
+        <a href="/"><img alt="Georgios Goudelis logo" src="images/website_logo.png" width="100px" height="170" /></a>
+      </ul>
 
-                  <span id="brand">
-                        <a href="index.html"><img alt="Georgios Goudelis logo" src="images/ipo.jpg" width="55" height="40"></a>
-                  </span>
+      <ul id="menu">
+        <li>
+          <a href="/" class="cool-link">home<span>.</span></a>
+        </li>
+        <li>
+          <a href="work.html" class="cool-link">work<span>.</span></a>
+        </li>
+        <li>
+          <a href="about.html" class="cool-link">about me<span>.</span></a>
+        </li>
+      </ul>
+    </div>
 
-                  <ul id="menu">
-                        <li class="cool-link"><a href="index.html">home<span>.</span></a></li>
-                        <li class="cool-link"><a href="work.html">work<span>.</span></a></li>
-                        <li class="cool-link"><a href="about.html">about me<span>.</span></a></li>
-                        
-                  </ul>
+      <div id="toggle">
+        <div class="span" style="color: black;">menu</div>
+      </div>
+    </nav>
 
-                  <div id="toggle">
-                        <div class="span">menu</div>
-                  </div>
+    <div id="resize">
+      <div class="close-btn">close</div>
 
-            </nav>
+      <ul id="menu">
+        <li>
+          <a href="/" class="cool-link">home<span>.</span></a>
+        </li>
+        <li>
+          <a href="work.html" class="cool-link">work<span>.</span></a>
+        </li>
+        <li>
+          <a href="about.html" class="cool-link">about me<span>.</span></a>
+        </li>
+        <div class="social-icons">
+          <span>
+            <a href="https://www.instagram.com/ggoudelis/" target="_blank"><i
+                class="fa fa-instagram" style="color: #007bff; font-size: 22px;"></i></a>
+          </span>
 
-            <div id="resize">
-                  <div class="close-btn">close</div>
+          <span>
+            <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i
+                class="fa fa-linkedin" style="color: #007bff;"></i></a>
+          </span>
+          <span>
+            <a href="mailto:ggoudelis97@gmail.com" target="_blank"><i class="fa fa-envelope"
+                style="color: #007bff;"></i></a>
+          </span>
+        </div>
+      </ul>
+    </div>
 
-                  <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="work.html">work<span>.</span></a></li>
-                        <li><a href="about.html">about me<span>.</span></a></li>
-                  </ul>
-            </div>
-            <!--------------- navbar ends here --------------->
+    <div class="mf-social-side-list wow fadeInUp" data-wow-delay="0.6s">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/ggoudelis/" target="_blank"><i style="font-size: 26px;"
+              class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i
+              class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="mailto:ggoudelis97@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!--------------- navbar ends here --------------->
 
+    <!--------------- hero section starts here --------------->
+    <div class="hero">
+      <div class="header">
+        <h1 class="pol line anim-typewriter">Create and Innovate the Future.</h1>
+      </div>
+    </div>
 
+    <div class="scroll-down"></div>
+    <!--------------- hero section ends here --------------->
 
+    <!--------------- projects section starts here --------------->
 
+    <div class="container-fluid">
+      <!-- <br /> -->
 
-            <!--------------- hero section starts here --------------->
-            <div class="hero">
-                  <div class="header">
-                        <h1 class="line anim-typewriter">Create and Innovate the Future.</h1>
-                  </div>
-            </div>
-
-            <div class="scroll-down"></div>
-            <!--------------- hero section ends here --------------->
-
-          
-
-            <!--------------- projects section starts here --------------->
-            <div class="container-fluid">
-                  <br><br><br>
-
-                  <h6>Selected projects</h6>
-
-                  <div class="vertical"></div>
-                  <br>
-
-                  <div class="whitespace"></div>
-                  <div class="whitespace"></div>
-
-                  <div class="row">
-                        <div class="col-md-7"></div>
-                            
-                            <div class="col-md-4 project project3 wow fadeInUp" onclick="location.href='project3.html'">
-                              <div class="overlay">
-                                    <div class="content"><button class="myBtn">EXPLORE</button></div>
-                                  </div>      
-                            </div>
-                                
-                  </div>
-
-                  <div class="whitespace"></div>
-
-                  <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5 project project2 wow fadeInUp" onclick="location.href='project2.html'">
-                              <div class="overlay">
-                                    <div class="content"><button class="myBtn">EXPLORE</button></div>
-                                  </div>      
-                        </div>
-
-                        <div class="col-lg-6"></div>
-                  </div>
-
-                  <div class="whitespace"></div>
-
-                  <div class="row">
-                        <div class="col-md-7"></div>
-
-                        <div class="col-md-4 project project1 wow fadeInUp" onclick="location.href='project1.html'">
-                              <div class="overlay">
-                                    <div class="content"><button class="myBtn">EXPLORE</button></div>
-                                  </div>      
-                        </div>
-
-                        <div class="col-lg-1"></div>
-                  </div>
-
-                  <div class="whitespace"></div>
-
-                  <div class="row">
-                        <div class="col-md-1"></div>
-
-                        <div class="col-md-4 project project4 wow fadeInUp" onclick="location.href='project4.html'">
-                              <div class="overlay">
-                                    <div class="content"><button class="myBtn">EXPLORE</button></div>
-                                  </div>      
-                        </div>
-
-                        <div class="col-lg-6"></div>
-                  </div>
-
-                  <div class="whitespace"></div>
-            </div>
-            <!--------------- projects section ends here --------------->
-
-
-
-            <!--------------- footer starts here --------------->
-            <div class="footer">
-                  <div class="container">
-                        <br><br>
-
-                        <div class="collab">
-                              <div class="row">
-                                    <div class="col-lg-12">
-                                          <p class="wow fadeInUp">Got an interesting project? I can help you.</p>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <br>
-
-                        <div class="hr">
-                              <div class="row"></div>
-                        </div>
-
-                        <br><br>
-
-                        <div class="info">
-                              <div class="row">
-                                    <div class="col-lg-4" id="personal">
-                                          <p class="wow fadeInUp">connect with me</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @ggoudelis</h4>
-                                          <br><br>
-                                    </div>
-
-                                    <div class="col-lg-4" id="media">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                                          <ul>
-                                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://facebook.com/george.goudelis.9/" target="_blank" rel="noopener">fb</a></li>
-                                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://instagram.com/ggoudelis/" target="_blank" rel="noopener">ig</a></li>
-                                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank" rel="noopener">in</a></li>
-                                                <li id="yt" class="wow fadeInUp" data-wow-delay="1s"><a href="https://angel.co/u/georgios-goudelis/" target="_blank" rel="noopener">al</a></li>
-                                          </ul>
-
-                                          <br><br>
-                                    </div>
-
-                                    <div class="col-lg-4" id="address">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">ggoudelis97@gmail.com</h4>
-                                          <br><br>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-            <!--------------- footer ends here --------------->
-
-            <br><br><br><br>
-
+      <div class="containerr hero-content wow fadeInUp" data-wow-delay="0.3s">
+        <p style="color: #000">
+          I'm George Goudelis, a designer with a <br />
+          technical background based in Milan. My aim <br />
+          is to combine the essense of function and aesthetics, <br />
+          to bring meaning into the world. <br />
+        </p>
+        <div class="vertical"></div>
       </div>
 
-      <!-- greensock cdn -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <br />
+      <br />
 
-      
-      <script type="text/javascript">
+      <p id="recent-work">Selected work</p>
+      <br />
 
-      // Function execute When the user scrolls the page
-      $(document).ready(function(){
-            $(this).scrollTop(0);
-      });
+      <div class="container">
+        <div class="img-area">
+          <div onclick="location.href='fortable-bike.html'" class="single-img-container">
+            <div class="single-img project3 wow fadeInUp" style="background-image: url(images/foldable_bike.png);">
+            </div>
+            <div class="img-text-container">
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Foldable Bike</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+            </div>
+          </div>
+          <div onclick="location.href='fan-heater-venti.html'" class="single-img-container">
+            <div class="single-img  project2 wow fadeInUp" style="background-image: url(images/fan-heater.png);">
+            </div>
+            <div class="img-text-container">
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"Venti" Fan Heater</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+            </div>
+          </div>
+          <div onclick="location.href='sustainable-kettle.html'" class="single-img-container">
+            <div class="single-img  project1 wow fadeInUp" style="background-image: url(images/project3_new.jpg);">
+            </div>
+            <div class="img-text-container">
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Sustainable Kettle</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2020</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+            </div>
+          </div>
+          <div onclick="location.href='automatic-recycling-sorter.html'" class="single-img-container">
+            <div class="single-img  project1 wow fadeInUp" style="background-image: url(images/recycle.jpg);"></div>
+            <div class="img-text-container">
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Recycling Sorter</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2020</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
 
-      // Function execute When the user scrolls the page
-      window.onscroll = () =>{
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("Bar").style.width = scrolled + "%";
-      }
-
-    
-
-
-      // navigation starts here
-
-      $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      // navigation ends here
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut
-      })
-
-      TweenMax.staggerFrom("#menu li a", 1, {
-            delay: 0.4,
-            opacity: 0,
-            ease: Expo.easeInOut
-      }, 0.1);
-
-      // nav animation ends
-
-      new WOW().init();
+      <br />
+      <button class="see-more">SEE MORE</button>
+      <br />
+      <div class="vertical2"></div>
+      <br><br>
 
 
-      </script>
+      <div class="container">
+        <div class="containerr">
+          <p style="color: #000">
+          <h6 style="color: #000; font-size: 35px;">How Can I Help?</h6>
+          </p>
+        </div>
+        <!-- <br/> -->
+        <div class="skill-container text-center">
+          <div class="row">
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-3 hero-content">
+              <div id="photo_about">
+                <img src="images/services/VIrtual_Modelling.svg" class="skills-title wow fadeInUp"
+                  data-wow-delay="0.1s" width="110" height="110">
+              </div>
+              <div>
+                <p class="skills-title wow fadeInUp" data-wow-delay="0.2s" style="color: #eb4f1a;">Virtual Modelling
+                </p>
+                <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">CAD modelling of simple or <br />
+                complex shapes, 3D-rendering <br />and performance simulations.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-3 hero-content">
+              <div id="photo_about">
+                <img src="images/services/Problem_Solving.svg" class="skills-title wow fadeInUp"
+                  data-wow-delay="0.1s" width="110" height="110">
+              </div>
+              <p class="skills-title wow fadeInUp" data-wow-delay="0.2s" style="color: #eb4f1a;">Problem Solving</p>
+              <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Assistance to overcome <br />
+                obstacles in project by <br />using methodical approach.</p>
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-3 hero-content">
+              <div id="photo_about">
+                <img src="images/services/Rapid_Prototyping.svg" class="skills-title wow fadeInUp"
+                  data-wow-delay="0.1s" width="90" height="90">
+              </div>
+              <p class="skills-title wow fadeInUp" data-wow-delay="0.2s" style="color: #eb4f1a;">Rapid Prototyping</p>
+              <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Construction of functional<br />
+                prototype to showcase or <br /> critically evaluate design.</p>
+            </div>
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-3 hero-content">
+              <div id="photo_about">
+                <img src="images/services/Creative_direction.svg" class="skills-title wow fadeInUp"
+                  data-wow-delay="0.1s" width="110" height="90">
+              </div>
+              <p class="skills-title wow fadeInUp" data-wow-delay="0.2s" style="color: #eb4f1a;">Creative Direction</p>
+              <p class="skills wow fadeInUp" data-wow-delay="0.2s" style="color:#000">Support in the creative<br />
+                process to assist decision <br />making during ideation phase.</p>
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
+      </div>
+      <br /> <br /><br />
+      <!--------------- footer starts here --------------->
+      <div class="footerr">
+        <div class="container">
+          <div class="collab">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="wow fadeInUp" style="color: #000">
+                  Got an interesting project? Let's talk.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr">
+            <div class="row"></div>
+          </div>
+
+          <br />
+
+        </div>
+        <div class="copyright wow fadeInUp">
+          <span style="color: grey; font-size: 14px;">Copyrights @ 2022 Georgios Goudelis.</span>
+          <span style="color: grey; font-size: 14px;">All rights reserved.</span>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+
+  </br>
+  <!--------------- footer ends here --------------->
+
+  </div>
+
+  <!-- greensock cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <script type="text/javascript">
+    $('html, body').animate({ scrollTop: 0 }, 'medium');
+    // Function execute When the user scrolls the page
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+
+    // Function execute When the user scrolls the page
+    window.onscroll = () => {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("Bar").style.width = scrolled + "%";
+    };
+
+    window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > navbar.offsetHeight) {
+    navbar.classList.add("hide");
+  } else {
+    navbar.classList.remove("hide");
+  }
+});
+
+    // button handlers
+
+    // function handleSeeMoreButtonClick(event) {
+    //   event.preventDefault(); // prevent default behavior
+    //   window.location.href = 'work.html'; // navigate to the page
+    // }
+
+    const seeMoreButton = document.querySelector('.see-more');
+    seeMoreButton.addEventListener('click', () => {
+      window.location.href = 'work.html';
+    });
+
+    // navigation starts here
+
+    $("#toggle").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    $("#resize ul li a").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    // navigation ends here
+
+    // nav animation
+
+    TweenMax.from("#brand", 1, {
+      delay: 0.2,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut,
+    });
+
+    TweenMax.staggerFrom(
+      "#menu li a",
+      1,
+      {
+        delay: 0.2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      },
+      0.1
+    );
+
+    // nav animation ends
+
+    new WOW().init();
+  </script>
 </body>
+
 </html>
