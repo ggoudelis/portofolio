@@ -45,18 +45,13 @@ a:link {
 }
 
 .anim-typewriter {
-  animation: typewriter 3.2s steps(40) 0.5s 1 normal both,
-  blinkTextCussor 500ms steps(40) infinite normal;
+  animation: typewriter 3.2s steps(50) 0.5s 1 normal both,
+  blinkTextCussor 500ms steps(50) infinite normal;
   color: #000000;
   /* border-right: 2px solid #000000; */
   border-right-width: 1px;
   /* border-top: 1px solid #000000;
   border-bottom: 1px solid #000000; */
-}
-
-@keyframes typewriter {
-  from { width: 0 }
-  to { width: 100% }
 }
 
 @keyframes typewriter {
@@ -74,9 +69,14 @@ a:link {
       width: 0;
     }
     to {
-      width: 17em;
+      width: 13em;
     }
   }
+}
+
+@keyframes typewriter {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 /*--------------- navigation --------------- */
