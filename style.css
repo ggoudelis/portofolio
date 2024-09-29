@@ -766,7 +766,7 @@ button::-moz-focus-inner {
 } 
 
 .bike_solution {
-  background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt1.svg);
+  background: url(images/bike/solution/Esit Bike_Solution_Complete_Pt1.svg);
   height: 500vh;
   width: 100%;
   background-size: contain;
@@ -794,7 +794,7 @@ button::-moz-focus-inner {
 } 
 
 .bike_problem {
-  background: url(images/bike/problem/Esit\ Bike_Problem_Complete.svg);
+  background: url(images/bike/Problem/Esit Bike_Problem_Complete.svg);
   height: 270vh;
   width: 100%;
   background-size: contain;
@@ -822,7 +822,7 @@ button::-moz-focus-inner {
 } 
 
 .bike_process {
-  background: url(images/bike/process/Esit_Bike_Process_Complete.svg);
+  background: url(images/bike/process/Esit Bike_Process_Complete.svg);
   height: 650vh;
   width: 100%;
   background-size: contain;
@@ -878,7 +878,7 @@ button::-moz-focus-inner {
 } 
 
 .solution_process {
-  background: url(images/fan-heater/Fan_Heater_Solution_Complete.svg);
+  background: url(images/fan-heater/Fan Heater_Solution_Complete.svg);
   height: 700vh;
   width: 100%;
   background-size: contain;
@@ -912,13 +912,6 @@ button::-moz-focus-inner {
   background-size: cover;
 }
 
-.solution_gif2 {
-  background: url(images/Safety-locking-gif.gif);
-  height: 350px;
-  width: 500px;
-  background-size: cover;
-}
-
 @media screen and (max-width: 990px) {
   .solution_gif {
     height: 250px;
@@ -942,7 +935,7 @@ button::-moz-focus-inner {
 } 
 
 .asset_process {
-  background: url(images/fan-heater/process/Fan_Heater_Process_Complete.svg);
+  background: url(images/fan-heater/process/Fan Heater_Process_Complete.svg);
   height: 400vh;
   width: 100%;
   background-size: contain;
