@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Georgios Goudelis" />
+  <meta name="description" content="This is Georgios Goudelis portfolio webpage" />
+
+  <title>Portfolio | Georgios Goudelis</title>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="shortcut icon" href="images/tab-logo.svg" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- bootstrap cdns -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+    rel="stylesheet" />
+
+  <!-- terminal effect -->
+  <script src="t.min.js"></script>
+  <script src="wow.min.js"></script>
+
+  <!-- for on scroll animations -->
+  <link rel="stylesheet" href="animate.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--------------- navbar starts here --------------->
+    <nav id="navbar">
+      <!--------------- social media --------------->
+
+      <div class="progress_bar" id="Bar"></div>
+
+      <span id="brand2">
+        <a href="/"><img alt="Georgios Goudelis logo" src="images/website_logo.png" width="150" height="70" /></a>
+      </span>
+
+      <ul id="menu">
+        <li>
+          <a href="work.html" class="cool-link">work<span>.</span></a>
+        </li>
+        <li>
+            <a href="gallery.html" class="cool-link">gallery<span>.</span></a>
+        </li>
+        <li>
+          <a href="about.html" class="cool-link">about me<span>.</span></a>
+        </li>
+      </ul>
+
+      <div id="toggle">
+        <div class="span" style="color: black;">menu</div>
+      </div>
+    </nav>
+
+    <div id="resize">
+      <div class="close-btn">close</div>
+
+      <ul id="menu">
+        <li>
+          <a class="cool-link" href="work.html">work<span>.</span></a>
+        </li>
+        <li>
+          <a class="cool-link" href="gallery.html">gallery<span>.</span></a>
+        </li>
+          <a class="cool-link" href="about.html">about me<span>.</span></a>
+        </li>
+        <div class="social-icons">
+          <span>
+            <a href="https://www.instagram.com/ggoudelis.design/" target="_blank"><i
+              class="fa fa-instagram" style="color: #007bff; font-size: 22px;"></i></a>
+          </span>
+
+          <span>
+            <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i class="fa fa-linkedin"
+                style="color: #007bff;"></i></a>
+          </span>
+          <span>
+            <a href="mailto:ggoudelis.design@gmail.com" target="_blank"><i class="fa fa-envelope"
+                style="color: #007bff;"></i></a>
+          </span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="mf-social-side-list wow fadeInUp" data-wow-delay="0.6s">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/ggoudelis.design/" target="_blank"><i style="font-size: 26px;"
+              class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://uk.linkedin.com/in/georgios-goudelis-bb4518107/" target="_blank"><i
+              class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="mailto:ggoudelis.design@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <!--------------- navbar ends here --------------->
+
+    <div class="whitespace"></div>
+
+    <!--------------- hero section starts here --------------->
+    <div class="container">
+      <div class="hero-content">
+        <br />
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="wow fadeInUp" data-wow-delay="0.3s" style="color: #000">
+              gallery.
+            </h3>
+            <div class="hr wow fadeInUp" data-wow-delay="0.3s">
+              <div class="row"></div>
+            </div>
+            <div class="album_container wow fadeInUp" data-wow-delay="0.3s">
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/1.jpg')">
+                <img src="images/gallery/1.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/2.jpg')">
+                <img src="images/gallery/2.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/3.jpg')">
+                <img src="images/gallery/3.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/4.jpg')">
+                <img src="images/gallery/4.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/5.jpg')">
+                <img src="images/gallery/5.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/6.jpg')">
+                <img src="images/gallery/6.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/7.jpg')">
+                <img class="collab-img" src="images/gallery/7.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/8.jpg')">
+                <img src="images/gallery/8.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/9.jpg')">
+                <img src="images/gallery/9.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/10.jpg')">
+                <img src="images/gallery/10.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/11.jpg')">
+                <img src="images/gallery/11.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/12.jpg')">
+                <img src="images/gallery/12.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/13.jpg')">
+                <img src="images/gallery/13.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/14.jpg')">
+                <img src="images/gallery/14.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/15.jpg')">
+                <img src="images/gallery/15.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div class="item item-project single-img-container" onclick="openPopup('images/gallery/16.jpg')">
+                <img src="images/gallery/16.jpg" alt="">
+                <div class="img-text-container"></div>
+              </div>
+
+              <div id="popup-container">
+                <span class="album-close-btn" onclick="closePopup()">&times;</span>
+                <img id="popup-image">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--------------- hero section ends here --------------->
+
+    <!--------------- footer starts here --------------->
+    <div class="footerr">
+      <div class="container">
+        <div class="hr">
+          <div class="row"></div>
+        </div>
+
+        <br />
+
+      </div>
+      <div class="copyright wow fadeInUp">
+        <span style="color: grey; font-size: 14px;">Copyrights @ 2022 Georgios Goudelis.</span>
+        <span style="color: grey; font-size: 14px;">All rights reserved.</span>
+      </div>
+      <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+      <br />
+    </div>
+  </div>
+  </div>
+
+  </br>
+
+  <!--------------- footer ends here --------------->
+
+  </div>
+
+  <!-- greensock cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <script type="text/javascript">
+    $('html, body').animate({ scrollTop: 0 }, 'medium');
+    // Function execute When the user scrolls the page
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+
+    // Function execute When the user scrolls the page
+    window.onscroll = () => {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("Bar").style.width = scrolled + "%";
+    };
+
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > navbar.offsetHeight) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+
+    // navigation starts here
+
+    $("#toggle").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    $("#resize ul li a").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function () {
+      $(this).toggleClass("on");
+      $("#resize").toggleClass("active");
+    });
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.back-to-top').addClass('show');
+          } else {
+            $('.back-to-top').removeClass('show');
+          }
+        });
+
+        $('.back-to-top').click(function (e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+      });
+
+    // nav animation
+
+    TweenMax.from("#brand2", 1, {
+      delay: 0.2,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut,
+    });
+
+    TweenMax.staggerFrom(
+      "#menu li a",
+      1,
+      {
+        delay: 0.2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      },
+      0.1
+    );
+
+    // nav animation ends
+
+    new WOW().init();
+
+    // popup images starts here
+
+    function openPopup(src) {
+      const popup = document.getElementById('popup-container');
+      const image = document.getElementById('popup-image');
+      image.src = src;
+      popup.style.display = 'block';
+    }
+
+    function closePopup() {
+      const popup = document.getElementById('popup-container');
+      popup.style.display = 'none';
+    }
+
+    const popup = document.getElementById('popup-container');
+
+    // Add a click event listener to the popup window to close it when clicked
+    popup.addEventListener('click', (event) => {
+      if (event.target === popup || !popup.contains(event.target)) {
+        closePopup();
+      }
+    });
+
+    // popup images ends here
+
+ 
+  </script>
+</body>
+
+</html>
