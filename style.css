@@ -10,6 +10,7 @@ body {
   background-color: #faf5f0 !important;;
   background: #faf5f0 !important;
   color: #fff !important;
+  scroll-behavior: smooth;
 }
 
 
@@ -337,6 +338,8 @@ nav #menu li a:hover {
   justify-content: center;
   text-align: center;
   padding-bottom: 20px;
+  padding-top: 3vh;
+  margin-top: -3vh;
 }
 
 .hero {
@@ -739,7 +742,7 @@ button::-moz-focus-inner {
 
 .bike_solution2 {
   background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt2.svg);
-  height: 700vh;
+  height: 300vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -767,7 +770,7 @@ button::-moz-focus-inner {
 
 .bike_solution {
   background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt1.svg);
-  height: 500vh;
+  height: 10vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1965,6 +1968,10 @@ p i {
   gap: 25px;
 }
 
+.fa-instagram {
+  padding-top: 5px;
+}
+
 /* apply smaller font size for smaller screens */
 @media (max-width: 768px) {
   .hero .header .pol {
@@ -1980,15 +1987,9 @@ p i {
 }
 
 .footer-about {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-}
-
-@media (max-width: 950px) {
-  .footer-about {
-    position: relative;
-  }
 }
 
 .collab-img {
@@ -2008,10 +2009,14 @@ p i {
   top: 0;
   width: 100%;
   transition: all 0.4s ease-in-out;
+  border: none;
+  overflow: hidden;
 }
 
 .sticky-nav.hide {
   transform: translateY(-100%);
+  opacity: 0;
+  border: none;
 }
 
 #popup-container {
@@ -2098,4 +2103,9 @@ p i {
   .hero-content br {
     display: none;
   }
+}
+
+.scroll-button {
+  display: inline-block;
+  padding: 20px 20px;
 }

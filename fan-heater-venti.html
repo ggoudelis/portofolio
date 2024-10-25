@@ -176,30 +176,11 @@
     <br />
 
     <div class="container">
-      <div class="acc-toggle" data-collapse="">
-        <div class="acc-block">
-          <div class="wow fadeInUp acc-no">(01)</div>
-          <div class="wow fadeInUp acc-title" style="color: #000">
-            SOLUTION
-          </div>
-          <div class="wow fadeInUp acc-toggle-icon">
-            <ion-icon name="add-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-      <ul class="photo-section">
-        <br />
-        <br />
-        <div class="solo-asset-area">
-          <div class="single-img solution_process wow fadeInUp"></div>
-        </div>
-      </ul>
-
 
       <div class="acc-toggle" data-collapse="">
         <div class="acc-block">
           <div class="wow fadeInUp acc-no">
-            (02)</div>
+            (01)</div>
           <div class="wow fadeInUp acc-title" style="color: #000">
             PROBLEM
           </div>
@@ -217,7 +198,7 @@
 
       <div class="acc-toggle" data-collapse="">
         <div class="acc-block">
-          <div class="wow fadeInUp acc-no">(03)</div>
+          <div class="wow fadeInUp acc-no">(02)</div>
           <div class="wow fadeInUp acc-title" style="color: #000">
             PROCESS
           </div>
@@ -231,6 +212,24 @@
         <br />
         <div class="solo-asset-area">
           <div class="single-img asset_process wow fadeInUp"></div>
+        </div>
+      </ul>
+
+      <div class="acc-toggle">
+        <div class="acc-block" style="cursor: default">
+          <div class="wow fadeInUp acc-no">(03)</div>
+          <div class="wow fadeInUp acc-title" style="color: #000">
+            SOLUTION
+          </div>
+          <div class="wow fadeInUp acc-toggle-icon">
+          </div>
+        </div>
+      </div>
+      <ul class="photo-section">
+        <br />
+        <br />
+        <div class="solo-asset-area">
+          <div class="single-img solution_process wow fadeInUp"></div>
         </div>
       </ul>
 
@@ -317,6 +316,7 @@
       let parent = document.querySelectorAll("[data-collapse");
       parent.forEach((element) => {
         let clickTarget = element.querySelector("*");
+        let changeSign = element.querySelector('ion-icon');
         let collapseElement = element.nextElementSibling;
         let collapseElementChildren = collapseElement.children;
         let tl = new TimelineMax({
@@ -346,6 +346,11 @@
         );
 
         clickTarget.addEventListener("click", () => {
+          if(changeSign.name === "add-outline") {
+          changeSign.name = "remove-outline";
+        } else {
+          changeSign.name = "add-outline";
+        }
           tl.reversed() ? tl.play() : tl.reverse();
         });
       });
