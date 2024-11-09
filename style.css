@@ -2163,3 +2163,86 @@ p i {
   display: inline-block;
   padding: 20px 20px;
 }
+
+/* Object Gallery Styles */
+
+.object-gallery-container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.object-gallery-container h6 {
+  margin-bottom: 20px;
+}
+
+.object-gallery {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.gallery-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-images {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.gallery-image {
+  display: none;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-image.active {
+  display: block;
+}
+
+.gallery-image:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.gallery-nav {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.gallery-nav:hover {
+  color: #007bff;
+}
+
+.object-gallery-title {
+  font-size: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    max-width: 900px; 
+  }
+  .object-gallery-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-wrapper {
+    max-width: 500px;
+  }
+  .object-gallery-title {
+    font-size: 15px;
+  }
+}
