@@ -1625,12 +1625,16 @@ p i {
   border-radius: 50%;
 }
 
-.previous {
+.prev {
   color: black;
+  padding-left: 0;
+  padding-right: 24px;
 }
 
 .next {
   color: black;
+  padding-right: 0;
+  padding-left: 24px;
 }
 
 .arrow-left {
@@ -2192,7 +2196,7 @@ p i {
   display: flex;
   overflow: hidden;
   width: 100%;
-  max-width: 350px;
+  max-width: 700px;
   height: auto;
 }
 
@@ -2200,16 +2204,18 @@ p i {
   display: none;
   width: 100%;
   height: auto;
-  transition: opacity 0.3s ease;
+  opacity: 0%;
 }
 
 .gallery-image.active {
   display: block;
+  opacity: 100%;
+  transition: opacity 2s ease;
 }
 
 .gallery-image:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .gallery-nav {
@@ -2218,6 +2224,7 @@ p i {
   font-size: 24px;
   cursor: pointer;
   color: #333;
+  padding
 }
 
 .gallery-nav:hover {

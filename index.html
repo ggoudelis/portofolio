@@ -121,7 +121,9 @@
       </div>
     </div>
 
-    <div class="scroll-down"></div>
+    <div class="scroll-down">
+      <a href="#projectStart" class="scroll-button"></a>
+    </div>
     <!--------------- hero section ends here --------------->
 
     <!--------------- projects section starts here --------------->
@@ -129,7 +131,7 @@
     <div class="container-fluid">
       <!-- <br /> -->
 
-      <div class="containerr hero-content wow fadeInUp" data-wow-delay="0.3s">
+      <div id="projectStart" class="containerr hero-content wow fadeInUp" data-wow-delay="0.3s">
         <p style="color: #000">
           Based in Milan, Georgios Goudelis is a Greek <br />
           designer and engineer with experience in both <br />
@@ -147,22 +149,22 @@
 
       <div class="container">
         <div class="img-area">
-          <div onclick="location.href='fortable-bike.html'" class="single-img-container">
-            <div class="single-img project3 wow fadeInUp" style="background-image: url(images/foldable_bike.png);">
+          <div onclick="location.href='Santoni-Wall.html'" class="single-img-container">
+            <div class="single-img project3 wow fadeInUp" style="background-image: url(images/Santoni_Wall.jpg);">
             </div>
             <div class="img-text-container">
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"E-sit" Foldable Bike</p>
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Retail Store Decor</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2024</p>
               <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
             </div>
           </div>
-          <div onclick="location.href='fan-heater-venti.html'" class="single-img-container">
-            <div class="single-img  project2 wow fadeInUp" style="background-image: url(images/fan-heater.png);">
+          <div onclick="location.href='Wood-Vase.html'" class="single-img-container">
+            <div class="single-img  project2 wow fadeInUp" style="background-image: url(images/gallery/16.jpg);">
             </div>
             <div class="img-text-container">
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">"Venti" Fan Heater</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Patterned Wood Vase</p>
               <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2022</p>
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">rPLA + wood</p>
             </div>
           </div>
           <div onclick="location.href='Skeletos.html'" class="single-img-container">
@@ -173,12 +175,12 @@
               <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Project</p>
             </div>
           </div>
-          <div onclick="location.href='automatic-recycling-sorter.html'" class="single-img-container">
-            <div class="single-img  project1 wow fadeInUp" style="background-image: url(images/recycle.jpg);"></div>
+          <div onclick="location.href='Voronoi-Lamp.html'" class="single-img-container">
+            <div class="single-img  project1 wow fadeInUp" style="background-image: url(images/gallery/4.jpg);"></div>
             <div class="img-text-container">
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Recycling Sorter</p>
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2020</p>
-              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Product</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 25px; ">Voronoi Lamp</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">2023</p>
+              <p style="color: white; font-family: 'Roboto Mono'; font-size: 20px; ">Project</p>
             </div>
           </div>
         </div>
@@ -195,7 +197,7 @@
       <div class="container">
         <div class="containerr">
           <p style="color: #000">
-          <h6 style="color: #000; font-size: 35px;">How Can I Help? </h6>
+          <h6 style="color: #000; font-size: 35px;">Design Process </h6>
           </p>
         </div>
         <!-- <br/> -->
@@ -364,6 +366,8 @@
 
     // Function to display the active image
     function showImage(index) {
+      clearInterval(intervalId);
+      startInterval();
       galleryImages.forEach((img, i) => {
         img.classList.toggle('active', i === index);
       });
@@ -380,6 +384,17 @@
       currentImageIndex = (currentImageIndex < galleryImages.length - 1) ? currentImageIndex + 1 : 0;
       showImage(currentImageIndex);
     }
+
+    intervalTime = 3000;
+
+    function startInterval() {
+      intervalId = setInterval(() => {
+      nextImage();
+    }, intervalTime);
+    }
+
+    startInterval();
+
 
     // Initial display
     showImage(currentImageIndex);
