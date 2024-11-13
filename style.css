@@ -441,7 +441,9 @@ nav #menu li a:hover {
   border-bottom: 2px solid rgb(0, 0, 0);
   border-right: 2px solid rgb(0, 0, 0);
   -webkit-transform: translate(-50%, 0) rotate(45deg);
+  transform: translate(-50%, 0) rotate(45deg);
   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  margin: 20px;
 }
 
 @keyframes fade_move_down {
@@ -668,6 +670,7 @@ button::-moz-focus-inner {
   border: 2px solid black;
   border-color: black;
   color: black;
+  margin-top:10px;
 }
 
 .download_btn:hover {
@@ -742,59 +745,23 @@ button::-moz-focus-inner {
 
 .bike_solution2 {
   background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt2.svg);
-  height: 300vh;
+  aspect-ratio: 105/250;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
 }
-
-@media screen and (max-width: 1300px) {
-  .bike_solution2 {
-    height: 400vh;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .bike_solution2 {
-    height: 400vh;
-  }
-}
-
-@media screen and (max-width: 512px) {
-  .bike_solution2 {
-    height: 250vh;
-  }
-} 
 
 .bike_solution {
   background: url(images/bike/solution/Esit_Bike_Solution_Complete_Pt1.svg);
-  height: 10vh;
+  aspect-ratio: 7/50;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
 }
-
-@media screen and (max-width: 1300px) {
-  .bike_solution {
-    height: 300vh;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .bike_solution {
-    height: 250vh;
-  }
-}
-
-@media screen and (max-width: 512px) {
-  .bike_solution {
-    height: 150vh;
-  }
-} 
 
 .bike_problem {
   background: url(images/bike/Problem/Esit_Bike_Problem_Complete.svg);
@@ -910,20 +877,9 @@ button::-moz-focus-inner {
 
 .solution_gif {
   background: url(images/Gif-animation-for-main-menchanism.gif);
-  height: 350px;
-  width: 550px;
+  width: 100%;
+  aspect-ratio: 2560/1440;
   background-size: cover;
-}
-
-@media screen and (max-width: 990px) {
-  .solution_gif {
-    height: 250px;
-    width: 350px;
-  }
-  .solution_gif2 {
-    height: 250px;
-    width: 350px;
-  }
 }
 
 @media screen and (max-width: 512px) {
@@ -1500,6 +1456,9 @@ p i {
   -webkit-transition-property: margin-left;
   -webkit-transition-duration: 0.2s;
   -webkit-transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-delay: 0.25s;
+  transition-property: margin-left;
   box-shadow: 0px 0px 6px 0px #3e3d3d;
   cursor: pointer;
 }
@@ -2090,7 +2049,7 @@ p i {
   display: inline-block;
   padding: 4px 15px; /* Reduced vertical padding */
   background-color: transparent;
-  color: white; 
+  color: white !important; 
   font-size: 12px;
   text-align: center;
   text-decoration: none;
@@ -2157,15 +2116,13 @@ p i {
   }
 }
 
-@media (max-width: 767px) {
-  .hero-content br {
-    display: none;
-  }
-}
-
 .scroll-button {
   display: inline-block;
-  padding: 20px 20px;
+  padding: 60px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  right: 40px;
 }
 
 /* Object Gallery Styles */
@@ -2224,7 +2181,6 @@ p i {
   font-size: 24px;
   cursor: pointer;
   color: #333;
-  padding
 }
 
 .gallery-nav:hover {
